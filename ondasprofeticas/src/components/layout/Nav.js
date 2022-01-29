@@ -30,9 +30,9 @@ export default function Nav(){
 
 
 
-            <div className="bg-white mt-0 w-full sm:h-52 md:h-36 shadow-lg border  overflow-hidden sticky top-0 flex flex-row" >
-                <div className="basis-1/3 "> 
-                    <div className="md:ml-24 md:mt-6 sm:mt-14 ">
+            <div className="bg-white mt-0 items-center w-full sm:h-52 md:h-36 shadow-lg border  overflow-hidden sticky top-0 flex flex-row" >
+                <div className="basis-1/3"> 
+                    <div className="md:ml-24  sm:ml-3  ml-4">
                     <Image
                         src={logo}
                         height={90}
@@ -44,7 +44,7 @@ export default function Nav(){
 
                 </div>
                 <div className="basis-2/3 md:visible ">
-                        <ul className="mr-24 grow md:mt-10 text-sm font-light uppercase ">
+                        <ul className="md:mr-24 ml-10 grow  text-sm font-light uppercase ">
                             <li className="pt-2 px-2 ml-2 opacity-60 hover:text-amber-400  md:inline md:float-right "><a target="_blank" href="">Iglesia</a></li>
                             <li className="pt-2 px-2 ml-2 opacity-60 hover:text-amber-400  md:inline md:float-right "><a target="_blank" href="">Accion Profetica</a></li>
                             <li className="pt-2 px-2 ml-2 opacity-60 hover:text-amber-400  md:inline md:float-right "><a target="_blank" href="">Ebenezer</a></li>

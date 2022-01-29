@@ -13,13 +13,7 @@ export default function Principal(){
 
     return(
         <>
-            <Header>
-                <Nav/>
                 <Bienvenida/>
-
-
-            </Header>
-
         </>
     );
 }

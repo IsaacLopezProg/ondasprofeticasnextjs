@@ -13,7 +13,7 @@ const Principal = () =>{
         <>
         <Header>
             <Nav/>
-            <Principal/>
+            <Inicio/>
             
         </Header>
         </>
