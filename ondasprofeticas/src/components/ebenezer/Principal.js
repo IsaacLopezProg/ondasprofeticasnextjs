@@ -4,14 +4,14 @@ import React from 'react';
 import Bienvenida from '../layout/Bienvenida';
 
 // IMG
-import bg from '../../../public/img/bvinicio.jpg'
+import bg from '../../../public/img/bvintersecion.jpg'
 
 export default function Principal(){
 
 
     const bv = {
         src:bg,
-        layout:'fixed', // fill or fixed
+        layout:'fill', // fill or fixed
         texto1:'bienvenidos al',
         texto2:' ministerio',
         texto3:'ondas',
