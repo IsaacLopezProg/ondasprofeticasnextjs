@@ -9,12 +9,12 @@ export default function Bienvenida({bv}){
                 <Image
                     alt="Mountains"
                     src={bv.src}
-                    layout={bv.layout}
+                    layout='fill'
                     objectFit="cover"
                     objectPosition="center"
                     quality={100}
                 />
-                <div className="absolute inset-y-20  text-5xl text-center uppercase  w-full mx-auto my-auto ">
+                <div className=" absolute inset-y-20  text-5xl text-center uppercase  w-full mx-auto my-auto ">
                     <p className="font-bold mb-4" >
                         <span className="text-amber-400">
                             {bv.texto1}

@@ -1,17 +1,22 @@
 import React from 'react';
 
-// INTERNAL
+// EXTERNAL
 import Bienvenida from '../layout/Bienvenida';
+
+// INTERNAL
+import Detalle from './Detalle';
 
 // IMG
 import bg from '../../../public/img/bvinicio.jpg'
+
+
 
 export default function Principal(){
 
 
     const bv = {
         src:bg,
-        layout:'fixed', // fill or fixed
+        // layout:'fill', // fill or fixed
         texto1:'bienvenidos al',
         texto2:' ministerio',
         texto3:'ondas',
@@ -22,6 +27,7 @@ export default function Principal(){
     return(
         <>
                 <Bienvenida  bv={bv} />
+                <Detalle />
         </>
     );
 }
