@@ -1,6 +1,8 @@
 import React from 'react';
+
+// EXTERNAL
 import Image from 'next/image';
-import { Disclosure, Menu, Transition } from '@headlessui/react'
+import Link from 'next/link';
 
 // IMG
 import logo from '../../../public/img/aaaa.png';
@@ -45,13 +47,25 @@ export default function Nav(){
                 </div>
                 <div className="basis-2/3 md:visible ">
                         <ul className="md:mr-24 ml-10 grow  text-sm font-light uppercase ">
-                            <li className="pt-2 px-2 ml-2 opacity-60 hover:text-amber-400  md:inline md:float-right "><a target="_blank" href="">Iglesia</a></li>
-                            <li className="pt-2 px-2 ml-2 opacity-60 hover:text-amber-400  md:inline md:float-right "><a target="_blank" href="">Accion Profetica</a></li>
+                            <li className="pt-2 px-2 ml-2 opacity-60 hover:text-amber-400  md:inline md:float-right ">
+                                {/* <Link> */}
+                                    <a target="_blank" href="">Iglesia</a>
+                                {/* </Link> */}
+                            </li>
+                            <li className="pt-2 px-2 ml-2 opacity-60 hover:text-amber-400  md:inline md:float-right ">
+                                <Link href="/accion">
+                                    <a>Accion Profetica</a>
+                                </Link>
+                            </li>
                             <li className="pt-2 px-2 ml-2 opacity-60 hover:text-amber-400  md:inline md:float-right "><a target="_blank" href="">Ebenezer</a></li>
                             <li className="pt-2 px-2 ml-2 opacity-60 hover:text-amber-400  md:inline md:float-right "><a target="_blank" href="">Ebenezer</a></li>
                             <li className="pt-2 px-2 ml-2 opacity-60 hover:text-amber-400  md:inline md:float-right "><a target="_blank" href="">Emprende</a></li>
                             <li className="pt-2 px-2 ml-2 opacity-60 hover:text-amber-400  md:inline md:float-right "><a target="_blank" href="">Intercesion Profetica</a></li>
-                            <li className="pt-2 px-2 ml-2 opacity-60  hover:text-amber-400 md:inline md:float-right active:border-t-2 border-t-2 border-amber-400 active:text-amber-400 "><a target="_blank" href="">Inicio</a></li>
+                            <li className="pt-2 px-2 ml-2 opacity-60  hover:text-amber-400 md:inline md:float-right active:border-t-2 border-t-2 border-amber-400 active:text-amber-400 ">
+                                <Link href="/principal">
+                                    <a>Inicio</a>
+                                </Link>
+                            </li>
                         </ul>
                 </div>
             </div>

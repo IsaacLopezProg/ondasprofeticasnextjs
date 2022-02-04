@@ -1,7 +1,7 @@
 import React from 'react';
 
 // EXTERNAL
-import {LightBulbIcon, SearchIcon, GlobeAltIcon} from '@heroicons/react/outline'
+import {LightBulbIcon, SearchIcon, GlobeAltIcon} from '@heroicons/react/outline';
 
 export default function Mision(){
 
