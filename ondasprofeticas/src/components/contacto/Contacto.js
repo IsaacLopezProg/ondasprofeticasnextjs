@@ -12,8 +12,8 @@ export default function Contacto(){
         <>
             <div className="PADRE flex flex-wrap">
                 <div className="flex flex-col w-full">
-                    <div className="TITULO py-4 ml-16 divide-y-4 divide-slate-400/25 border-b border-slate-300">
-                        <h1 className="text-3xl font-light divide-y-4 divide-slate-400/25 ">
+                    <div className="TITULO py-4  border-b border-slate-300">
+                        <h1 className="text-3xl font-light ml-16">
                             Intercesión Profética
                         </h1>
                     </div>
@@ -120,9 +120,9 @@ export default function Contacto(){
                                         E-mail: <a className="text-amber-400" href="mailto:email@example.com">ondasprofeticas@gmail.com</a>
                                     </p>
                                     <p className="text-base text-gray-500 ">
-                                        Website:
+                                        Website: 
                                             <Link href="/principal">
-                                                <a className="text-amber-400" >ondasprofeticas.com</a>
+                                                <a className="text-amber-400" > ondasprofeticas.com</a>
                                             </Link>
                                     </p>
                                 </div>

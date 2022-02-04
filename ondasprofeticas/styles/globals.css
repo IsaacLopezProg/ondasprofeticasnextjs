@@ -17,6 +17,15 @@ a {
 
 @tailwind base;
 @tailwind components;
+
+.permisotitulo {
+  @apply my-4 text-3xl text-black font-light;
+}
+
+.permisolink {
+  @apply text-black hover:text-gray-500;
+}
+
 @tailwind utilities;
 
 
