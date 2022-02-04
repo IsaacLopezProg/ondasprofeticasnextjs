@@ -7,12 +7,16 @@ import Nav from '../src/components/layout/Nav';
 // FOOTER
 import Footer from '../src/components/layout/Footer';
 
-const Aviso = () =>{
+// INTERNAL
+import Principal from '../src/components/contacto/Principal';
+
+const Contacto = () =>{
 
     return (
         <>
         <Header>
             <Nav/>
+            <Principal/>
             <Footer/>
         </Header>
         </>
@@ -20,4 +24,4 @@ const Aviso = () =>{
 
 }
 
-export default Aviso;
+export default Contacto;
