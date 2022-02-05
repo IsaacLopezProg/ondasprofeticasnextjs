@@ -35,33 +35,42 @@ export default function Nav(){
             <div className="bg-white mt-0 items-center w-full sm:h-52 md:h-36 shadow-lg border  overflow-hidden sticky top-0 flex flex-row" >
                 <div className="basis-1/3"> 
                     <div className="md:ml-24  sm:ml-3  ml-4">
-                    <Image
-                        src={logo}
-                        height={90}
-                        width={90}
-                        alt="Picture of the author"
-                    />
+                        <Link href="/principal">
+                            <Image
+                                src={logo}
+                                height={90}
+                                width={90}
+                                alt="Picture of the author"
+                            />
+                        </Link>
 
                     </div>
 
                 </div>
                 <div className="basis-2/3 md:visible ">
                         <ul className="md:mr-24 ml-10 grow  text-sm font-light uppercase ">
-                            <li className="pt-2 px-2 ml-2 opacity-60 hover:text-amber-400  md:inline md:float-right ">
+                            <li className="navlink ">
                                 {/* <Link> */}
                                     <a target="_blank" href="">Iglesia</a>
                                 {/* </Link> */}
                             </li>
-                            <li className="pt-2 px-2 ml-2 opacity-60 hover:text-amber-400  md:inline md:float-right ">
+                            <li className="navlink ">
                                 <Link href="/accion">
                                     <a>Accion Profetica</a>
                                 </Link>
                             </li>
-                            <li className="pt-2 px-2 ml-2 opacity-60 hover:text-amber-400  md:inline md:float-right "><a target="_blank" href="">Ebenezer</a></li>
-                            <li className="pt-2 px-2 ml-2 opacity-60 hover:text-amber-400  md:inline md:float-right "><a target="_blank" href="">Ebenezer</a></li>
-                            <li className="pt-2 px-2 ml-2 opacity-60 hover:text-amber-400  md:inline md:float-right "><a target="_blank" href="">Emprende</a></li>
-                            <li className="pt-2 px-2 ml-2 opacity-60 hover:text-amber-400  md:inline md:float-right "><a target="_blank" href="">Intercesion Profetica</a></li>
-                            <li className="pt-2 px-2 ml-2 opacity-60  hover:text-amber-400 md:inline md:float-right active:border-t-2 border-t-2 border-amber-400 active:text-amber-400 ">
+                            <li className="navlink "><a target="_blank" href="">Ebenezer</a></li>
+                            <li className="navlink ">
+                                <Link href="/emprende">
+                                    <a>Emprende</a>
+                                </Link>
+                            </li>
+                            <li className="navlink ">
+                                <Link href="/intersecion">
+                                    <a >Intercesion Profetica</a>
+                                </Link>
+                            </li>
+                            <li className="navlink active:border-t-2 border-t-2 border-amber-400 active:text-amber-400 ">
                                 <Link href="/principal">
                                     <a>Inicio</a>
                                 </Link>

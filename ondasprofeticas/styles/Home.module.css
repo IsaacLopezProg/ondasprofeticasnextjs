@@ -161,3 +161,25 @@
   text-shadow: 1px 1px 1px #3c5c5e; */
 }
 
+
+@media screen and (max-width: 768px) {
+  .altoemprende1 {
+    height: 1400px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .altoemprende2 {
+    height: 780px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .altoemprende3 {
+    height: 1200px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .altoemprende4 {
+    height: 700px;
+  }
+}

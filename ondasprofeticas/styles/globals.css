@@ -26,6 +26,14 @@ a {
   @apply text-black hover:text-gray-500;
 }
 
+.navlink{
+  @apply pt-2 px-2 ml-2 opacity-60 hover:text-amber-400  md:inline md:float-right;
+}
+
+.botonemprende{
+  @apply flex justify-between w-full px-4 py-2 font-medium text-left text-gray-400 hover:bg-amber-400 hover:text-black;
+}
+
 @tailwind utilities;
 
 
