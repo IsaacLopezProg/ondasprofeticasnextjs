@@ -2,6 +2,7 @@ import React from 'react';
 
 // INTERNAL
 import Bienvenida from '../layout/Bienvenida';
+import Pastores from './Pastores';
 
 // IMG
 import bg from '../../../public/img/bviglesia.jpg'
@@ -11,7 +12,7 @@ export default function Principal(){
 
     const bv = {
         src:bg,
-        layout:'fill', // fill or fixed
+        // layout:'fill', // fill or fixed
         texto1:'bienvenidos al',
         texto2:' ministerio',
         texto3:'ondas',
@@ -22,6 +23,7 @@ export default function Principal(){
     return(
         <>
                 <Bienvenida  bv={bv} />
+                <Pastores />
         </>
     );
 }

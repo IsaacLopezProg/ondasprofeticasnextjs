@@ -49,10 +49,10 @@ export default function Nav(){
                 </div>
                 <div className="basis-2/3 md:visible ">
                         <ul className="md:mr-24 ml-10 grow  text-sm font-light uppercase ">
-                            <li className="navlink ">
-                                {/* <Link> */}
-                                    <a target="_blank" href="">Iglesia</a>
-                                {/* </Link> */}
+                            <li className="navlink">
+                                <Link href="/iglesia">
+                                    <a>Iglesia</a>
+                                </Link>
                             </li>
                             <li className="navlink ">
                                 <Link href="/accion">
