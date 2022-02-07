@@ -3,6 +3,9 @@ import React from 'react';
 // INTERNAL
 import Bienvenida from '../layout/Bienvenida';
 import Pastores from './Pastores';
+import Vision from './Vision';
+import Horario from './Horario';
+import Ubicacion from './Ubicacion';
 
 // IMG
 import bg from '../../../public/img/bviglesia.jpg'
@@ -24,6 +27,9 @@ export default function Principal(){
         <>
                 <Bienvenida  bv={bv} />
                 <Pastores />
+                <Vision />
+                <Horario />
+                <Ubicacion />
         </>
     );
 }

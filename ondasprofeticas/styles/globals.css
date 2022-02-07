@@ -15,6 +15,11 @@ a {
   box-sizing: border-box;
 }
 
+.imageniglesia{
+  height: 360px;
+  width: 500px;
+}
+
 @tailwind base;
 @tailwind components;
 
