@@ -39,6 +39,7 @@ export default function Horario() {
             </div>
 
         </div>
+        <div className="w-full bg-gray-500 mt-8" style={{height:'0.25px'}}></div>
         </>
     )
 }
