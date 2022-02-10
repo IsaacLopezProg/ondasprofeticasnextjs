@@ -18,7 +18,6 @@ const Principal = () =>{
         <Header>
             <Nav/>
             <Inicio/>
-            {/* <Country countryCode="AU" /> */}
             <Footer/>
             
         </Header>

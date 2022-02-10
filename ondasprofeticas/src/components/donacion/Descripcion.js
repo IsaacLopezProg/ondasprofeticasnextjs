@@ -8,7 +8,7 @@ import divider from '../../../public/img/divideraccion.png';
 import Image from 'next/image';
 
 // INTERNAL
-import Posts from './Posts';
+// import Posts from './Posts';
 
 export default function Descripcion(){
 
