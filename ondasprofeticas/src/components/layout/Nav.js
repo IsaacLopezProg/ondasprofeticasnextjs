@@ -13,7 +13,7 @@ export default function Nav(){
         <>
         <div className="container-auto">
             <div className="grid grid-cols-2 border-b">
-                    <div class="md:ml-20"> 
+                    <div className="md:ml-20"> 
                         <a className="text-sm text-slate-400 font-normal" href="mailto:ondasprofeticas@gmail.com">
                             <i className="fa fa-envelope-o text-amber-400 "></i>
                             &nbsp;ondasprofeticas@gmail.com 
@@ -22,9 +22,9 @@ export default function Nav(){
                     </div>
                 <div className="overflow">
                         <ul className="mr-24">
-                            <li className=" px-2 border-l hover:opacity-50 inline float-right text-red-600"><a target="_blank" href="https://www.youtube.com/channel/UCTvx29fRpv9vWNUiRlHYjXQ"><i class="fa fa-youtube-play"></i></a></li>
-                            <li className=" px-2 border-l hover:opacity-50 inline float-right text-purple-600"><a target="_blank" href="https://instagram.com/profeta_nathanael.v.g/"><i class="fa fa-instagram"></i></a></li>
-                            <li className=" px-2 border-x hover:opacity-50  inline float-right text-blue-800"><a target="_blank" href="https://www.facebook.com/Profeta-Nathanael-Veras-G-106847647624852/"><i class="fa fa-facebook"></i></a></li>
+                            <li className=" px-2 border-l hover:opacity-50 inline float-right text-red-600"><a target="_blank" rel="noreferrer" href="https://www.youtube.com/channel/UCTvx29fRpv9vWNUiRlHYjXQ"><i className="fa fa-youtube-play"></i></a></li>
+                            <li className=" px-2 border-l hover:opacity-50 inline float-right text-purple-600"><a target="_blank" rel="noreferrer" href="https://instagram.com/profeta_nathanael.v.g/"><i className="fa fa-instagram"></i></a></li>
+                            <li className=" px-2 border-x hover:opacity-50  inline float-right text-blue-800"><a target="_blank" rel="noreferrer" href="https://www.facebook.com/Profeta-Nathanael-Veras-G-106847647624852/"><i className="fa fa-facebook"></i></a></li>
                         </ul>
                 </div>
             </div> 
@@ -34,14 +34,14 @@ export default function Nav(){
 
             <div className="bg-white mt-0 items-center w-full sm:h-52 md:h-36 shadow-lg border  overflow-hidden sticky top-0 flex flex-row" >
                 <div className="basis-1/3"> 
-                    <div className="md:ml-24  sm:ml-3  ml-4">
-                        <Link href="/principal">
-                            <Image
-                                src={logo}
-                                height={90}
-                                width={90}
-                                alt="Picture of the author"
-                            />
+                    <div className="md:ml-24  sm:ml-3  ml-4 ">
+                        <Link href="/" passHref >
+                            <div className="cursor-pointer h-24 w-24">
+                                <Image
+                                    src={logo}
+                                    alt="Picture of the author"
+                                />
+                            </div>
                         </Link>
 
                     </div>
@@ -59,7 +59,7 @@ export default function Nav(){
                                     <a>Accion Profetica</a>
                                 </Link>
                             </li>
-                            <li className="navlink "><a target="_blank" href="">Ebenezer</a></li>
+                            {/* <li className="navlink "><a href="">Ebenezer</a></li> */}
                             <li className="navlink ">
                                 <Link href="/emprende">
                                     <a>Emprende</a>
@@ -71,7 +71,7 @@ export default function Nav(){
                                 </Link>
                             </li>
                             <li className="navlink active:border-t-2 border-t-2 border-amber-400 active:text-amber-400 ">
-                                <Link href="/principal">
+                                <Link href="/">
                                     <a>Inicio</a>
                                 </Link>
                             </li>

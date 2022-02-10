@@ -28,6 +28,7 @@ export default function Pastores(){
                             objectFit="responsive"
                             objectPosition="center"
                             quality={100}
+                            alt='foto'
                         />
                     </div>
                     <div className="tab">
@@ -96,6 +97,7 @@ export default function Pastores(){
                         objectFit="fill"
                         objectPosition="center"
                         quality={100}
+                        alt="Foto"
                     />
                 </div>
             </div>

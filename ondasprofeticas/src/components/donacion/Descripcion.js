@@ -7,6 +7,9 @@ import divider from '../../../public/img/divideraccion.png';
 // EXTERNAL
 import Image from 'next/image';
 
+// INTERNAL
+import Posts from './Posts';
+
 export default function Descripcion(){
 
     return (
@@ -24,14 +27,15 @@ export default function Descripcion(){
 
                             src={foto}
                             quality={100}
+                            alt='Foto'
 
                         />
                     </div>
                 </div>
-                <div className="PARRAFO md:basis-1/2 mt-8 text-center md:text-left">
+                <div className="PARRAFO md:basis-1/2 mt-8  text-center md:text-left">
                     <h1 className="text-3xl font-bold uppercase">Accion Profetica</h1>
-                    <Image src={divider} />
-                    <div className="font-light text-gray-500 mr-16">
+                    <Image src={divider} alt='Divider' />
+                    <div className="font-light text-gray-500 mr-16 ml-8">
                         <p className="mt-4">
                         Es la parte operacional del ministerio <span className="uppercase font-extralight">ONDAS PROFÉTICAS</span> dónde se lleva de la palabra a la acción por medios de obras sociales para mostrar a Cristo a través del servicio y donaciones.
                         </p>

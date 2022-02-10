@@ -27,7 +27,7 @@ export default function Forma(){
                     <div className="flex flex-col">
                         <div className="COLS-1 text-center">
                             <h1 className=" font-medium uppercase text-6xl text-amber-400"> FORMA DE TRABAJO </h1>
-                            <Image src={divider} />
+                            <Image src={divider} alt='divider'/>
                         </div>
                         <div className="COLS-2">
                             <div className="md:flex md:flex-row">
@@ -39,6 +39,7 @@ export default function Forma(){
                                             objectFit="cover"
                                             objectPosition="center"
                                             quality={100}
+                                            alt='foto'
                                         />
                                     </div>
                                 </div>

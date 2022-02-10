@@ -58,7 +58,7 @@ const Cookies = () =>{
                             Nathanael Veras) o bien cuando se borran manualmente. </p>  
                 <p></p>
 
-                            <table width="100%" cellpadding="15" border="0">
+                            <table width="100%" cellPadding="15" border="0">
                 <tbody>
                 <tr>
                 <td>Nombre</td>

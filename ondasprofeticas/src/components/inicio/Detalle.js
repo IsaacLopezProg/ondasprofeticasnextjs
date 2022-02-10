@@ -30,6 +30,7 @@ export default function Detalle(){
                             objectFit="responsive"
                             objectPosition="center"
                             quality={100}
+                            alt='foto'
                         />
                     </div>
                     <div className="tab">
@@ -88,6 +89,7 @@ export default function Detalle(){
                         objectFit="cover"
                         objectPosition="center"
                         quality={100}
+                        alt='foto'
                     />
                 </div>
             </div>

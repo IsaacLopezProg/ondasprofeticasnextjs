@@ -16,7 +16,7 @@ export default function Horario() {
                     <h1 className="text-4xl uppercase font-bold mt-8">
                         Nuestros Dias De Servicios
                     </h1>
-                    <Image src={divider} />
+                    <Image src={divider}  alt='divider'/>
                 </div>
             </div>
         <div className="md:flex md:justify-evenly w-full mx-auto md:max-w-5xl bg-white my-4 hover:bg-amber-400  border border-black text-center">

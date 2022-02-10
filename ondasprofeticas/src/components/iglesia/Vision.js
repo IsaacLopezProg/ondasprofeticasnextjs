@@ -23,7 +23,7 @@ export default function Vision(){
             <div className="flex flex-col bg-black">
                 <div className="TITULO text-center m-8 ">
                     <h1 className="text-3xl font-bold uppercase text-amber-400">iglesia more casa de adoracion</h1>
-                    <Image src={divider} />
+                    <Image src={divider} alt='divider'/>
                     <p className="text-slate-500 font-bold mt-4">Abundante vida para todos</p>
                 </div>
                 <div className="IMAGEN_VISION md:flex md:flex-row bg-amber-400">
@@ -36,6 +36,7 @@ export default function Vision(){
                                 objectFit="cover"
                                 objectPosition="center"
                                 quality={100}
+                                alt='foto'
                             />
                         </div>
                     </div>

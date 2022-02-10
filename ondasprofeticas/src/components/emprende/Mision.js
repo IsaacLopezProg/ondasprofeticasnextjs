@@ -29,7 +29,7 @@ export default function Mision(){
                     <div className="flex flex-col">
                         <div className="COLS-1 text-center">
                             <h1 className=" font-medium uppercase text-6xl text-amber-400"> EMPRENDE </h1>
-                            <Image src={divider} />
+                            <Image src={divider} alt='divider'/>
                             <p className="mt-4 text-gray-500 ">Desarrollo personal y ministerial. </p>
                         </div>
                         <div className="COLS-2">
@@ -42,6 +42,7 @@ export default function Mision(){
                                             objectFit="cover"
                                             objectPosition="center"
                                             quality={100}
+                                            alt='foto'
                                         />
                                     </div>
                                 </div>

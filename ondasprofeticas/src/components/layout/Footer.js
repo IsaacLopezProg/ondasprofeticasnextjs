@@ -7,7 +7,7 @@ export default function Footer(){
 
     return (
         <>
-            <div className="flex flex-row justify-center h-12 w-full bg-gray-800">
+            <div className="flex flex-row justify-center h-12 w-full bg-gray-800 text-xs md:text-base">
                 <div className="grid justify-items-center">
                     <Link href="/cookies">
                         <a className="my-4 text-amber-400 mr-4 hover:text-white">
