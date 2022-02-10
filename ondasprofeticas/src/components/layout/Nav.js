@@ -14,14 +14,14 @@ export default function Nav(){
         <div className="container-auto">
             <div className="grid grid-cols-2 border-b">
                     <div className="md:ml-20"> 
-                        <a className="text-sm text-slate-400 font-normal" href="mailto:ondasprofeticas@gmail.com">
+                        <a className="text-xs md:text-base text-slate-400 font-normal" href="mailto:ondasprofeticas@gmail.com">
                             <i className="fa fa-envelope-o text-amber-400 "></i>
                             &nbsp;ondasprofeticas@gmail.com 
                         </a> 
-                        <span className="ml-10 text-sm text-slate-400 font-normal"><i className="fa fa-phone text-amber-400"></i> &nbsp;809-798-1578 </span> 
+                        <span className="ml-10 text-xs md:text-base text-slate-400 font-normal"><i className="fa fa-phone text-amber-400"></i> &nbsp;809-798-1578 </span> 
                     </div>
                 <div className="overflow">
-                        <ul className="mr-24">
+                        <ul className="float-right md:mr-24">
                             <li className=" px-2 border-l hover:opacity-50 inline float-right text-red-600"><a target="_blank" rel="noreferrer" href="https://www.youtube.com/channel/UCTvx29fRpv9vWNUiRlHYjXQ"><i className="fa fa-youtube-play"></i></a></li>
                             <li className=" px-2 border-l hover:opacity-50 inline float-right text-purple-600"><a target="_blank" rel="noreferrer" href="https://instagram.com/profeta_nathanael.v.g/"><i className="fa fa-instagram"></i></a></li>
                             <li className=" px-2 border-x hover:opacity-50  inline float-right text-blue-800"><a target="_blank" rel="noreferrer" href="https://www.facebook.com/Profeta-Nathanael-Veras-G-106847647624852/"><i className="fa fa-facebook"></i></a></li>
