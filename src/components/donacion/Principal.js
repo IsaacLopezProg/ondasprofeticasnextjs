@@ -4,6 +4,8 @@ import React from 'react';
 import Bienvenida from '../layout/Bienvenida';
 import Descripcion from './Descripcion';
 import Conocenos from './Conocenos';
+import Ofrendas from './Ofrendas';
+import Prueba from './Prueba';
 
 // IMG
 import bg from '../../../public/img/bvaccion.jpg'
@@ -25,7 +27,9 @@ export default function Principal(){
         <>
                 <Bienvenida  bv={bv} />
                 <Descripcion />
+                <Ofrendas />
                 <Conocenos />
+                <Prueba />
         </>
     );
 }

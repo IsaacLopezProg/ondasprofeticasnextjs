@@ -1,5 +1,6 @@
 module.exports = {
   reactStrictMode: true,
+  
 }
 
 // next.config.js images
@@ -11,8 +12,8 @@ module.exports = {
 //   }
 // })
 
-// module.exports = {
-//   images: {
-//     disableStaticImages: true
-//   }
-// }
+module.exports = {
+  images: {
+    domains: ["www.paypal.com","https://www.paypalobjects.com"],
+  },
+}
