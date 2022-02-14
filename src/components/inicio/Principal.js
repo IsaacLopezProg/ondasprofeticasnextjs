@@ -6,6 +6,8 @@ import Bienvenida from '../layout/Bienvenida';
 // INTERNAL
 import Detalle from './Detalle';
 import Mision from './Mision';
+import Equipo from './Equipo';
+import Donacion from './Donacion';
 
 // IMG
 import bg from '../../../public/img/bvinicio.jpg'
@@ -30,6 +32,8 @@ export default function Principal(){
                 <Bienvenida  bv={bv} />
                 <Detalle />
                 <Mision />
+                <Equipo />
+                <Donacion />
         </>
     );
 }

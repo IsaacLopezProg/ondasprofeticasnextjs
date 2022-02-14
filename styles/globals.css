@@ -17,10 +17,38 @@ a {
   box-sizing: border-box;
 }
 
-.imageniglesia{
+/* .imageniglesia{
   height: 360px;
   width: 500px;
+} */
+
+@media screen and (max-width: 768px) {
+  .imageniglesia {
+  height: 360px;
+  width: 300px;
+  }
 }
+
+
+@media screen and (min-width: 768px) {
+  .imageniglesia{
+  height: 360px;
+  width: 500px;
+  }
+
+  
+}
+
+
+/* .imageniglesia {
+
+ 
+  @media screen and (min-width: 768px) {
+    height: 360px;
+    width: 500px;
+  }
+  
+} */
 
 
 .swiper {

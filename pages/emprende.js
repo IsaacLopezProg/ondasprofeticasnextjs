@@ -10,11 +10,17 @@ import Nav from '../src/components/layout/Nav';
 // FOOTER
 import Footer from '../src/components/layout/Footer';
 
+// EXTERNAL
+import Head from 'next/head';
+
 const Emprende = () =>{
 
     return (
         <>
         <Header>
+            <Head>
+                <title>EMPRENDE | Ondas Profeticas</title>
+            </Head>
             <Nav/>
             <Principal/>
             <Footer/>

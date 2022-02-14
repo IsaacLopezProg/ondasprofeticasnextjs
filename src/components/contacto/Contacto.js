@@ -1,16 +1,38 @@
-import React from 'react';
+import React, { useRef } from 'react';
 
 // ICONOS
 import {AtSymbolIcon,UserIcon, ChatAltIcon} from '@heroicons/react/outline';
 
 // EXTERNAL
 import Link from 'next/link';
+import emailjs from '@emailjs/browser';
 
 export default function Contacto(){
 
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        // try {
+        //     if(e.target.name === ''){
+
+        //     }
+        // } catch (error) {
+            
+        // }
+    
+        emailjs.sendForm('service_idk3oef', 'template_arkb75q', form.current, 'user_ZD7NZWGeqvxof2nWBvuqm')
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+      };
+
     return(
         <>
-            <div className="PADRE flex flex-wrap">
+            <div  className="PADRE flex flex-wrap">
                 <div className="flex flex-col w-full">
                     <div className="TITULO py-4  border-b border-slate-300">
                         <h1 className="text-3xl font-light ml-16">
@@ -35,7 +57,7 @@ export default function Contacto(){
                                     </h1>
                                 </div>
                                 <div className="FORMULARIO">
-                                    <form className="flex flex-col my-8">
+                                    <form ref={form} onSubmit={sendEmail} className="flex flex-col my-8" >
                                         <div className="NOMBRE_EMAIL flex flex-row">
                                             <div className="NOMBRE basis-full md:basis-1/2">
                                                 <label className="font-light mb-2" >Nombre</label>
@@ -45,7 +67,7 @@ export default function Contacto(){
                                                     </span>
                                                     <input
                                                     type="text"
-                                                    name="nombre"
+                                                    name="user_name"
                                                     id="company-website"
                                                     className="focus:ring-black focus:border-black flex-1 block w-full sm:text-sm border-gray-500"
                                                     // placeholder="www.example.com"
@@ -60,7 +82,7 @@ export default function Contacto(){
                                                     </span>
                                                     <input
                                                     type="text"
-                                                    name="email"
+                                                    name="user_email"
                                                     id="company-website"
                                                     className="focus:ring-black focus:border-black flex-1 block w-full sm:text-sm border-gray-500"
                                                     // placeholder="www.example.com"
@@ -71,8 +93,8 @@ export default function Contacto(){
                                         <div className="TEMA mt-8 w-full">
                                             <label className="font-light my-2 ">Tema</label>
                                             <br/>
-                                            <select className="w-full mt-2" >
-                                                <option value="0" selected disabled>Selecciona una opcion</option>
+                                            <select className="w-full mt-2" name="tipo" defaultValue="">
+                                                <option  value="" disabled>Selecciona una opcion</option>
                                                 <option value="Testimonio">Testimonio</option>
                                                 <option value="Peticion de Oracion">Peticion de Oracion</option>
                                                 <option value="Preguntas">Preguntas</option>
@@ -85,7 +107,7 @@ export default function Contacto(){
                                                 <ChatAltIcon className="h-8 w-8"/>
                                                 </span>
                                                 <textarea
-                                                    name="mensaje"
+                                                    name="message"
                                                     id="company-website"
                                                     className="focus:ring-black focus:border-black flex-1 block w-full sm:text-sm border-gray-500"
                                                 >
@@ -93,7 +115,7 @@ export default function Contacto(){
                                             </div>
                                         </div>
                                         <div className="BOTON mt-8 w-full ">
-                                            <button className=" text-center w-full bg-amber-400 py-4 border uppercase">
+                                            <button className="text-center w-full bg-amber-400 py-4 border uppercase">
                                                 Enviar mensaje  
                                             </button>
                                         </div>

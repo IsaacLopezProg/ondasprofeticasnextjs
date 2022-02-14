@@ -11,11 +11,17 @@ import Nav from '../src/components/layout/Nav';
 // FOOTER
 import Footer from '../src/components/layout/Footer';
 
+// EXTERNAL
+import Head from 'next/head';
+
 const Principal = () =>{
 
     return (
         <>
         <Header>
+            <Head>
+                <title>INICIO | Ondas Profeticas</title>
+            </Head>
             <Nav/>
             <Inicio/>
             <Footer/>

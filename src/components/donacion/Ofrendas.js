@@ -114,7 +114,7 @@ export default function Ofrendas(){
                                 <div className="md:flex md:justify-between max-w-max">
                                     <div className="PERSONAL  my-12 ml-12 grid justify-items-center bg-white w-64 h-72 md:w-80 md:h-80">
                                         <div className="my-4 mx-4">
-                                                <div className="border rounded-full p-8  hover:border-slate-300">
+                                                <div className="border rounded-full p-8  border-slate-300">
                                                     <Image src={personal} height={50} width={50} alt="paypal"/>
                                                 </div>
                                         </div>

@@ -63,9 +63,9 @@ export default function Conocenos(){
                         <Image src={divider} alt='divider'/>
                     </div>
                     <div className="CONTENIDO w-full" >
-                    {contenido.map((post,idx) =>(
+                    {contenido.map(post =>(
 
-                        <div key={idx} className="PADRE md:ml-36 p-8 mt-8 ">
+                        <div key={post.id} className="PADRE md:ml-36 p-8 mt-8 ">
                             <div className="FECHA  absolute  w-16 md:w-24 h-16 md:h-24 text-sm md:text-base text-center mt-10 md:mt-24 -ml-6 md:-ml-12 z-10 bg-amber-400">
                                 <span className=" text-xl md:text-4xl font-bold block text-center mt-2 md:py-2">{ format( new Date(post.createdDate), 'dd' )}</span>
                                 <p>

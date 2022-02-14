@@ -10,11 +10,17 @@ import Footer from '../src/components/layout/Footer';
 // INTERNAL
 import Principal from '../src/components/iglesia/Principal';
 
+// EXTERNAL
+import Head from 'next/head';
+
 const Contacto = () =>{
 
     return (
         <>
         <Header>
+            <Head>
+                <title>IGLESIA | Ondas Profeticas</title>
+            </Head>
             <Nav/>
             <Principal/>
             <Footer/>
