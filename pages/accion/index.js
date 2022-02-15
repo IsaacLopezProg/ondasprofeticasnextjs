@@ -1,62 +1,64 @@
-import React,{useState,useEffect} from 'react';
+import React from 'react';
 
 // IMG
-import divider from '../../../public/img/divideriglesia2.png';
-import divider2 from '../../../public/img/divideraccion.png';
-
-import accionp from '../../../public/img/accionp.jpg';
-import accionp2 from '../../../public/img/accionp2.jpg';
-import accionp3 from '../../../public/img/accionp3.jpg';
-import accionp4 from '../../../public/img/accionp4.jpg';
+import divider from '../../public/img/divideriglesia2.png';
+import divider2 from '../../public/img/divideraccion.png';
+// import divider from '../../public'
 
 // EXTERNAL
 import Image from 'next/image';
+import Link from 'next/link';
+import Head from 'next/head';
+
 // import formatDistanceToNow from 'date-fns/formatDistanceToNow';
 import { format } from 'date-fns';
-import { es } from 'date-fns/locale';
+// import { es } from 'date-fns/locale';
 
 
-// import { builder } from '@builder.io/sdk';
-// builder.init('fb0e5cc283ee41ed967bd97a41783fce');
 
-export default function Conocenos(){
+// HEAD
+import Header from '../../src/components/layout/Header'
+import Nav from '../../src/components/layout/Nav';
+
+// FOOTER
+import Footer from '../../src/components/layout/Footer';
+
+
+// INTERNAL
+import Bienvenida from '../../src/components/layout/Bienvenida';
+import Descripcion from '../../src/components/donacion/Descripcion';
+import Ofrendas from '../../src/components/donacion/Ofrendas';
+
+// IMG
+import bg from '../../public/img/bvaccion.jpg'
+
+
+
+export default function Conocenos({posts}){
+
+    console.log(posts)
     
-    // const getPost = async () => {
-        
-        //     const api = await builder.get('post').promise().then(content => {
-            //         const result = content;
-            //         setContenido(result);
-            //     });
-            // }
-        
-        // useEffect( () => {
-            //     getPost();
-            // }, [])
-            
-            // como usar builder en la consola, solo hace
-            // falta un getAll que imprima todos los resultados
-            // console.log(contenido);
-            
-    const [contenido, setContenido] = useState([]);
 
-    const consultarAPI = async () => {
-        const api = await fetch('https://cdn.builder.io/api/v2/content/post?apiKey=fb0e5cc283ee41ed967bd97a41783fce&limit=10');
-        const resultado = await api.json()
-        setContenido(resultado.results);
-        console.log(resultado.results);
-        // guardarFrase(frase[0]);
-      }
-
-    useEffect( () => {
-
-        if(contenido.length !== 0){
-            consultarAPI();
-        }
-    }, [contenido])
-
+    const bv = {
+        src:bg,
+        layout:'fill', // fill or fixed
+        texto1:'somos',
+        texto2:' accion',
+        texto3:'Y queremos acc',
+        texto4:'ionar por ti',
+        visible:'visible' //visible o invisible
+    }
 
     return(
         <>
+        <Header>
+            <Head>
+                <title>ACCION | Ondas Profeticas</title>
+            </Head>
+            <Nav/>
+            <Bienvenida  bv={bv} />
+            <Descripcion />
+            <Ofrendas />
         <div className="CONTAIN">
                 <div className="flex flex-col mx-auto ">
                     <div className="TITULO basis-full text-center my-8">
@@ -66,7 +68,7 @@ export default function Conocenos(){
                         <Image src={divider} alt='divider'/>
                     </div>
                     <div className="CONTENIDO w-full" >
-                    {contenido.map(post =>(
+                    {posts.map(post =>(
 
                         <div key={post.id} className="PADRE md:ml-36 p-8 mt-8 ">
                             <div className="FECHA  absolute  w-16 md:w-24 h-16 md:h-24 text-sm md:text-base text-center mt-10 md:mt-24 -ml-6 md:-ml-12 z-10 bg-amber-400">
@@ -87,7 +89,9 @@ export default function Conocenos(){
                                 <h1 className="uppercase font-light text-4xl text-center md:text-left -mb-2">{post.data.tema}</h1>
                                 <Image src={divider2} alt='divider2'/>
                                 <p className="font-light max-w-4xl text-gray-500 mt-4">{post.data.descripcion}</p>
-                                <button className="divide-y-4 uppercase font-medium mt-8 border-2 border-amber-400 py-2 px-4 rounded hover:bg-amber-400">ver mas</button>
+                                <Link href={`/accion/[id]`} as={`/accion/${post.id}`} key={post.id} passHref>
+                                    <button className="divide-y-4 uppercase font-medium mt-8 border-2 border-amber-400 py-2 px-4 rounded hover:bg-amber-400">ver mas</button>
+                                </Link>
                             </div>
                             <div className="w-full bg-gray-500 mt-8" style={{height:'2px'}}></div>
 
@@ -97,6 +101,23 @@ export default function Conocenos(){
                     </div>
                 </div>
             </div>
+            <p>HOLA</p>
+            <Footer/>
+        </Header>
         </>
     )
+}
+
+
+export async function getServerSideProps(){
+
+    const api = await fetch('https://cdn.builder.io/api/v2/content/post?apiKey=fb0e5cc283ee41ed967bd97a41783fce&limit=10');
+    const res = await api.json();
+    const posts = res.results;
+
+    return {
+        props: {
+            posts
+        }
+    }
 }
