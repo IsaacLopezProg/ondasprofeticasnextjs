@@ -15,13 +15,7 @@ const Header = props =>{
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />   
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossOrigin="anonymous" referrerPolicy="no-referrer" />
                 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-                {/* <link rel="shortcut icon" href={logo.ico} /> */}
-                {/* <title>{titulo}</title> */}
-                {/* <script ></script> */}
-                {/* <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script> */}
-                {/* <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1"/>  */}
-                {/* <meta name="viewport" content="width=device-width, initial-scale=1" /> */}
-                {/* <meta name="viewport" content="width=device-width, initial-scale=1" /> */}
+                {/* EL SEO */}
             </Head>
                 <Script src="https://cdn.tailwindcss.com" strategy="beforeInteractive" />
                 <Script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp" strategy="beforeInteractive" />

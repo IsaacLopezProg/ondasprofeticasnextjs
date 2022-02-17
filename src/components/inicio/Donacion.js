@@ -21,7 +21,8 @@ export default function Donacion(){
                     layout='fill'
                     objectFit="cover"
                     objectPosition="center"
-                    quality={100}
+                    quality={60}
+                    placeholder="blur"
                 />
 
             <div className="PADRE absolute inset-y-8  w-full mx-auto my-auto">

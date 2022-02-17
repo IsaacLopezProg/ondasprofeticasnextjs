@@ -23,7 +23,8 @@ export default function Mision(){
                     layout='fill'
                     objectFit="cover"
                     objectPosition="center"
-                    quality={100}
+                    quality={60}
+                    placeholder="blur"
                 />
                 <div className="absolute inset-y-20  w-full mx-auto my-auto ">
                     <div className="flex flex-col">
@@ -43,6 +44,7 @@ export default function Mision(){
                                             objectPosition="center"
                                             quality={100}
                                             alt='foto'
+                                            placeholder="blur"
                                         />
                                     </div>
                                 </div>

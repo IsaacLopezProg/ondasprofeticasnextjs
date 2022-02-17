@@ -22,9 +22,21 @@ export default function Nav(){
                     </div>
                 <div className="overflow">
                         <ul className="float-right md:mr-24">
-                            <li className=" px-2 border-l hover:opacity-50 inline float-right text-red-600"><a target="_blank" rel="noreferrer" href="https://www.youtube.com/channel/UCTvx29fRpv9vWNUiRlHYjXQ"><i className="fa fa-youtube-play"></i></a></li>
-                            <li className=" px-2 border-l hover:opacity-50 inline float-right text-purple-600"><a target="_blank" rel="noreferrer" href="https://instagram.com/profeta_nathanael.v.g/"><i className="fa fa-instagram"></i></a></li>
-                            <li className=" px-2 border-x hover:opacity-50  inline float-right text-blue-800"><a target="_blank" rel="noreferrer" href="https://www.facebook.com/Profeta-Nathanael-Veras-G-106847647624852/"><i className="fa fa-facebook"></i></a></li>
+                            <li className=" px-2 border-l hover:opacity-50 inline float-right text-red-600">
+                                <Link href="https://www.youtube.com/channel/UCTvx29fRpv9vWNUiRlHYjXQ">
+                                    <a target="_blank" rel="noreferrer"><i className="fa fa-youtube-play"></i></a>
+                                </Link>
+                            </li>
+                            <li className=" px-2 border-l hover:opacity-50 inline float-right text-purple-600">
+                                <Link href="https://instagram.com/profeta_nathanael.v.g">
+                                    <a target="_blank" rel="noreferrer"><i className="fa fa-instagram"></i></a>
+                                </Link>
+                            </li>
+                            <li className=" px-2 border-x hover:opacity-50  inline float-right text-blue-800">
+                                <Link href="https://www.facebook.com/Profeta-Nathanael-Veras-G-106847647624852/">
+                                    <a target="_blank" rel="noreferrer" ><i className="fa fa-facebook"></i></a>
+                                </Link>
+                            </li>
                         </ul>
                 </div>
             </div> 

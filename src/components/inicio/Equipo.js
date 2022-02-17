@@ -34,7 +34,8 @@ export default function Equipo(){
                     layout='fill'
                     objectFit="cover"
                     objectPosition="center"
-                    quality={100}
+                    quality={60}
+                    placeholder="blur"
                 />
 
             <div className="PADRE absolute inset-y-8  w-full mx-auto my-auto">
@@ -69,6 +70,7 @@ export default function Equipo(){
                                                 layout="fill"
                                                 objectFit="cover"
                                                 objectPosition="center"
+                                                placeholder="blur"
                                             />
                                         </div>
 
@@ -99,6 +101,7 @@ export default function Equipo(){
                                                 layout="fill"
                                                 objectFit="cover"
                                                 objectPosition="center"
+                                                placeholder="blur"
                                             />
                                         </div>
 
@@ -129,6 +132,7 @@ export default function Equipo(){
                                                 layout="fill"
                                                 objectFit="cover"
                                                 objectPosition="center"
+                                                placeholder="blur"
                                             />
                                         </div>
 
@@ -159,6 +163,7 @@ export default function Equipo(){
                                                 layout="fill"
                                                 objectFit="cover"
                                                 objectPosition="center"
+                                                placeholder="blur"
                                             />
                                         </div>
 

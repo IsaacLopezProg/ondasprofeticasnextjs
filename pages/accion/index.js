@@ -49,6 +49,12 @@ export default function Conocenos({posts}){
         visible:'visible' //visible o invisible
     }
 
+    function parrafo(p){
+        const cortado = p.slice(0,200);
+        const agregado = cortado.concat(cortado,'...');
+        return agregado;
+    }
+
     return(
         <>
         <Header>
@@ -88,7 +94,7 @@ export default function Conocenos({posts}){
                             <div className="TEMA ">
                                 <h1 className="uppercase font-light text-4xl text-center md:text-left -mb-2">{post.data.tema}</h1>
                                 <Image src={divider2} alt='divider2'/>
-                                <p className="font-light max-w-4xl text-gray-500 mt-4">{post.data.descripcion}</p>
+                                <p className="font-light max-w-4xl text-gray-500 mt-4">{parrafo(post.data.descripcion)}</p>
                                 <Link href={`/accion/[id]`} as={`/accion/${post.id}`} key={post.id} passHref>
                                     <button className="divide-y-4 uppercase font-medium mt-8 border-2 border-amber-400 py-2 px-4 rounded hover:bg-amber-400">ver mas</button>
                                 </Link>

@@ -24,11 +24,10 @@ export default function Descripcion(){
                 <div className="IMAGEN md:basis-1/2 ">
                     <div className="my-8 md:ml-8">
                         <Image 
-
                             src={foto}
                             quality={100}
                             alt='Foto'
-
+                            placeholder='blur'
                         />
                     </div>
                 </div>

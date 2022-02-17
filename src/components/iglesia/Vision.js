@@ -37,6 +37,7 @@ export default function Vision(){
                                 objectPosition="center"
                                 quality={100}
                                 alt='foto'
+                                placeholder="blur"
                             />
                         </div>
                     </div>

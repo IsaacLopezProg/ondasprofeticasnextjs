@@ -90,6 +90,7 @@ export default function Detalle(){
                         objectPosition="center"
                         quality={100}
                         alt='foto'
+                        placeholder="blur"
                     />
                 </div>
             </div>

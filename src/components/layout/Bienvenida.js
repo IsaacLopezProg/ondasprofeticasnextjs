@@ -13,6 +13,8 @@ export default function Bienvenida({bv}){
                     objectFit="cover"
                     objectPosition="center"
                     quality={100}
+                    priority
+                    placeholder="blur"
                 />
                 <div className=" absolute inset-y-20  text-5xl text-center uppercase  w-full mx-auto my-auto ">
                     <p className="font-bold mb-4" >

@@ -33,7 +33,7 @@ export default function Ofrendas(){
                 layout='fill'
                 objectFit="cover"
                 objectPosition="center"
-                quality={100}
+                placeholder="blur"
             />
             <div className="PADRE absolute inset-y-8  w-full mx-auto my-auto">
                 <div className="flex flex-col">

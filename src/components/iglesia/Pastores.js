@@ -29,6 +29,7 @@ export default function Pastores(){
                             objectPosition="center"
                             quality={100}
                             alt='foto'
+                            placeholder="blur"
                         />
                     </div>
                     <div className="tab">
