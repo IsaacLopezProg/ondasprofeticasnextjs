@@ -70,7 +70,7 @@ export default function Contacto(){
                                                     name="user_name"
                                                     id="company-website"
                                                     required
-                                                    minlength="5"
+                                                    minLength="5"
                                                     className="focus:ring-black focus:border-black flex-1 block w-full sm:text-sm border-gray-500"
                                                     // placeholder="www.example.com"
                                                     />

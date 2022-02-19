@@ -41,7 +41,7 @@ export default function Pastores(){
                                             <h5 className="text-sm md:text-xl font-light my-4 max-w-max"><span className="border-b border-black">Nathanael Veras Grullón</span> y <span className="border-b border-black">Marinelva Anabel Almonte Arnaud</span></h5>
                                                 <p className="text-sm md:text-base font-light">Somos la casa de Dios para ti, estamos listos para recibirte junto a tu familia y gozar de nuestro Dios en oración, alabanzas y exaltación, y asi bendecir tu vida a través de la poderosa palabra del señor.</p>
                                                 <br/>
-                                                <p className="text-sm md:text-base font-light"><span className="border-b border-black">SALMOS 23:6</span> "Ciertamente el bien y la misericordia me seguirán todos los días de mi vida, Y en la casa de Jehová moraré por largos días."</p>
+                                                <p className="text-sm md:text-base font-light"><span className="border-b border-black">SALMOS 23:6</span> Ciertamente el bien y la misericordia me seguirán todos los días de mi vida, Y en la casa de Jehová moraré por largos días.</p>
                                         </div>
                                     </Tab.Panel>
                                 <Tab.Panel>

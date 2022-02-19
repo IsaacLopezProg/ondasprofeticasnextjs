@@ -53,7 +53,7 @@ export default function Detalle(){
                                 <div className="detalle-2 mb-8">
                                     <h5 className="text-sm md:text-xl font-light my-4"> Nuestro llamado está basado en la palabra dicha en:</h5>
                                     <p className="font-light text-sm md:text-base"> <span className="border-b border-black"> JEREMIAS 1:10 </span>
-                                    "Mira que te he puesto en este día sobre naciones y sobre reinos, para arrancar y para destruir, para arruinar y para derribar, para edificar y para plantar." </p>
+                                    Mira que te he puesto en este día sobre naciones y sobre reinos, para arrancar y para destruir, para arruinar y para derribar, para edificar y para plantar. </p>
                                     <p className="text-slate-500 font-light text-sm md:text-base">  Y Actualmente predicamos la palabra a fin de arrancar, destruir, arruinar y derribar todo argumento que se levanté en contra del conocimiento de Cristo y así poder edificar y plantar la semilla del evangelio en cada persona que nos escuche.</p>
                                 </div>
                             </Tab.Panel>
