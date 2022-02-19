@@ -5,8 +5,8 @@ import Image from 'next/image';
 import {Tab} from '@headlessui/react';
 
 // IMG
-import foto from '../../../public/img/foto.jpg'
-import divider from '../../../public/img/divider.png'
+import foto from '/public/img/foto.jpg'
+import divider from '/public/img/divider.png'
 
 // ICONS
 
@@ -18,13 +18,13 @@ export default function Detalle(){
         <>
         <div className="h-auto flex flex-wrap bg-amber-400">
             <div className="basis-full md:basis-1/2">
-                <div className="ml-16 mr-4 my-16">
-                    <h1 className="uppercase font-bold text-5xl text-center mb-2">
+                <div className="text-center ml-4 md:ml-16 mr-4 my-16">
+                    <h1 className="uppercase font-bold text-4xl md:text-5xl mb-2">
                     MINISTERIO ONDAS 
                     <br/>
                     PROFETICAS
                     </h1>
-                    <div className="mb-12">
+                    <div className="mb-8">
                         <Image 
                             src={divider}
                             objectFit="responsive"
@@ -38,21 +38,23 @@ export default function Detalle(){
                             <Tab.List >
                                 <Tab.Panels>
                                     <Tab.Panel>
-                                        <div className="detalle-1 mb-8">
-                                            <h5 className="text-xl font-light my-4">Somos un ministerio dedicado a predicar la palabra de manera objetiva.</h5>
-                                                <p className="font-light text-base">Llevando el mensaje de Jesucristo a través de:</p>
-                                                <p className="text-slate-500 font-light"> - Predicaciones en linea y presenciales.</p>
-                                                <p className="text-slate-500 font-light"> - Capacitaciones a líderes.</p>
-                                                <p className="text-slate-500 font-light"> - Conferencias para desarrollo personal, familiar y ministerial.</p>
-                                                <p className="text-slate-500 font-light"> - Obras sociales.</p>
+                                        <div className="detalle-1 mb-8 my-4">
+                                            <h5 className="text-sm md:text-xl font-light my-4">Somos un ministerio dedicado a predicar la palabra de manera objetiva.</h5>
+                                                <p className="font-light text-sm md:text-lg">Llevando el mensaje de Jesucristo a través de:</p>
+                                                <div className="text-slate-500 font-light text-xs md:text-base mt-2">
+                                                <p className="mt-2"> - Predicaciones en linea y presenciales.</p>
+                                                <p className="mt-2"> - Capacitaciones a líderes.</p>
+                                                <p className="mt-2"> - Conferencias para desarrollo personal, familiar y ministerial.</p>
+                                                <p className="mt-2"> - Obras sociales.</p>
+                                                </div>
                                         </div>
                                     </Tab.Panel>
                                 <Tab.Panel>
                                 <div className="detalle-2 mb-8">
-                                    <h5 className="text-xl font-light my-4"> Nuestro llamado está basado en la palabra dicha en:</h5>
-                                    <p className="font-light text-base"> <span className="border-b border-black"> JEREMIAS 1:10 </span>
-                                    Mira que te he puesto en este día sobre naciones y sobre reinos, para arrancar y para destruir, para arruinar y para derribar, para edificar y para plantar. </p>
-                                    <p className="text-slate-500 font-light">  Y Actualmente predicamos la palabra a fin de arrancar, destruir, arruinar y derribar todo argumento que se levanté en contra del conocimiento de Cristo y así poder edificar y plantar la semilla del evangelio en cada persona que nos escuche.</p>
+                                    <h5 className="text-sm md:text-xl font-light my-4"> Nuestro llamado está basado en la palabra dicha en:</h5>
+                                    <p className="font-light text-sm md:text-base"> <span className="border-b border-black"> JEREMIAS 1:10 </span>
+                                    "Mira que te he puesto en este día sobre naciones y sobre reinos, para arrancar y para destruir, para arruinar y para derribar, para edificar y para plantar." </p>
+                                    <p className="text-slate-500 font-light text-sm md:text-base">  Y Actualmente predicamos la palabra a fin de arrancar, destruir, arruinar y derribar todo argumento que se levanté en contra del conocimiento de Cristo y así poder edificar y plantar la semilla del evangelio en cada persona que nos escuche.</p>
                                 </div>
                             </Tab.Panel>
                                 </Tab.Panels>
@@ -83,7 +85,7 @@ export default function Detalle(){
                 </div>
             </div>
             <div className="basis-full md:basis-1/2">
-                <div className="m-8">
+                <div className="mx-8 mb-4 -mt-4">
                     <Image 
                         src={foto}
                         objectFit="cover"

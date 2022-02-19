@@ -7,7 +7,7 @@ import Contacto from './Contacto';
 import Bienvenida from '../layout/Bienvenida';
 
 // IMG
-import bg from '../../../public/img/bvintersecion.jpg'
+import bg from '/public/img/bvintersecion.jpg'
 
 export default function Principal(){
 
@@ -15,10 +15,10 @@ export default function Principal(){
     const bv = {
         src:bg,
         // layout:'fill', // fill or fixed
-        texto1:'bienvenidos al',
-        texto2:' ministerio',
-        texto3:'ondas',
-        texto4:'profeticas',
+        texto1:'somos',
+        texto2:' Intercesores',
+        texto3:'Y queremos',
+        texto4:'orar por ti',
         visible:'visible' //visible o invisible
     }
 

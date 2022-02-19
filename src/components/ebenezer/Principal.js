@@ -4,7 +4,7 @@ import React from 'react';
 import Bienvenida from '../layout/Bienvenida';
 
 // IMG
-import bg from '../../../public/img/bvintersecion.jpg'
+import bg from '/public/img/bvintersecion.jpg'
 
 export default function Principal(){
 

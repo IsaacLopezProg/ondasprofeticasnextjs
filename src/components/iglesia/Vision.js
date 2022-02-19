@@ -1,15 +1,16 @@
 import React from 'react';
 
 // IMG
-import divider from '../../../public/img/divideriglesia.png'
-import iglesia from '../../../public/img/iglesia.jpg'; 
+import divider from '/public/img/divideriglesia.png'
+import divider2 from '/public/img/dividerdonacion.png';
+import iglesia from '/public/img/iglesia.jpg'; 
 
 // EXTERNAL
 import Image from 'next/image';
-import { css } from '@emotion/react';
+// import { css } from '@emotion/react';
 
 // CSS
-import {imageniglesia} from '../../../styles/Home.module.css';
+// import {imageniglesia} from '../../../styles/Home.module.css';
 // import '../../../styles/globals.css';
 
 export default function Vision(){
@@ -43,15 +44,17 @@ export default function Vision(){
                     </div>
                     <div className="VISION basis-full md:basis-1/2 text-center md:text-left">
                         <div className="mx-auto my-12">
-                            <h1 className="text-3xl font-bold uppercase">nuestra vision</h1>
+                            <h1 className="text-3xl font-bold uppercase -mb-4">nuestra vision</h1>
+                            <Image src={divider2} alt='divider'/>
                             <br/>
-                            <p className="text-xl font-light">Abundante Vida Para Todos</p>
-                            <br/>
-                            <p className="text-base font-light">- Conquistar</p>
-                            <p className="text-base font-light">- Conectar</p>
-                            <p className="text-base font-light">- Construir</p>
-                            <p className="text-base font-light">- Comisionar</p>
-                            <p className="text-base font-light mt-2">    Hombres y mujeres para ejercer toda buena obra en el llamado que Dios les ha dado</p>
+                            <p className="text-sm md:text-xl font-light mt-2">Abundante Vida Para Todos</p>
+                            <div className="text-slate-500 font-light text-xs md:text-base mt-2">
+                                <p className="mt-2">- Conquistar</p>
+                                <p className="mt-2">- Conectar</p>
+                                <p className="mt-2">- Construir</p>
+                                <p className="mt-2">- Comisionar</p>
+                                <p className="mt-2">Hombres y mujeres para ejercer toda buena obra en el llamado que Dios les ha dado</p>
+                            </div>
 
                         </div>
                     </div>

@@ -1,14 +1,14 @@
 import React from 'react';
 
 // IMG
-import bgdonacion from '../../../public/img/bgdonacion.jpg';
-import divider from '../../../public/img/divideremprende.png';
-// import divider2 from '../../../public/img/dividerdonacion.png';
-import paypal from '../../../public/img/paypal.png';
-import cashapp from '../../../public/img/cashapp.png';
-import western from '../../../public/img/western-union.png';
-import popular from '../../../public/img/popular.ico';
-import personal from '../../../public/img/contact.png'
+import bgdonacion from '/public/img/bgdonacion.jpg';
+import divider from '/public/img/divideremprende.png';
+// import divider2 from '/public/img/dividerdonacion.png';
+import paypal from '/public/img/paypal.png';
+import cashapp from '/public/img/cashapp.png';
+import western from '/public/img/western-union.png';
+import popular from '/public/img/popular.ico';
+import personal from '/public/img/contact.png'
 
 // EXTERNAL
 import Image from 'next/image';
@@ -20,7 +20,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 // CSS
-import styles from '../../../styles/Home.module.css';
+import styles from '/styles/Home.module.css';
 
 
 export default function Ofrendas(){

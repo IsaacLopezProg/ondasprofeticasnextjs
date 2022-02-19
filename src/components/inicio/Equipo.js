@@ -1,12 +1,12 @@
 import React from 'react';
 
 // IMG
-import bg from '../../../public/img/bginicio.jpg';
-import divider from '../../../public/img/divideremprende.png';
-import iglesia from '../../../public/img/iglesia.jpg';
-import orar from '../../../public/img/orar.jpg';
-import accion from '../../../public/img/accion.jpeg'
-import emprende from '../../../public/img/bgemprendeforma.jpg'
+import bg from '/public/img/bginicio.jpg';
+import divider from '/public/img/divideremprende.png';
+import iglesia from '/public/img/iglesia.jpg';
+import orar from '/public/img/orar.jpg';
+import accion from '/public/img/accion.jpeg'
+import emprende from '/public/img/bgemprendeforma.jpg'
 
 // EXTERNAL
 import Image from 'next/image';
@@ -19,7 +19,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 // CSS
-import styles from '../../../styles/Home.module.css';
+import styles from '/styles/Home.module.css';
 
 
 

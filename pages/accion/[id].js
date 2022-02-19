@@ -9,7 +9,7 @@ import bg from '../../public/img/bvaccion.jpg'
 import Image from 'next/image';
 import Link from 'next/link';
 import Head from 'next/head';
-import { format, isExists } from 'date-fns';
+import { format } from 'date-fns';
 import { es } from 'date-fns/locale';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper";
@@ -36,7 +36,6 @@ import Bienvenida from '../../src/components/layout/Bienvenida';
 
 
 export default function Detalle({posts}){
-    // console.log(posts);
 
     const bv = {
         src:bg,
@@ -182,7 +181,7 @@ export default function Detalle({posts}){
                 <div className="FOTOS max-w-5xl">
                     <div className="TEXT ml-4 md:ml-36">
                             <h1 className="text-2xl uppercase ">Fotos</h1>
-                            <Image src={divider2} />
+                            <Image src={divider2}  alt='divider2'/>
                     </div>
                     <div className="FOTOS md:ml-44 ml-4  my-8">
                     <Swiper pagination={{type: "fraction",}} loop={true} navigation={true} modules={[Pagination, Navigation]} className="mySwiper">
@@ -540,7 +539,8 @@ export default function Detalle({posts}){
 
 
  export async function getServerSideProps({ params }) {
-     const api = await fetch(`https://cdn.builder.io/api/v2/content/post?apiKey=fb0e5cc283ee41ed967bd97a41783fce&query.id=${params.id}`);
+    const apikey = process.env.API_KEY;
+     const api = await fetch(`https://cdn.builder.io/api/v2/content/post?apiKey=${apikey}&query.id=${params.id}`);
      const res = await api.json();
      const posts = res.results[0].data;
      return {

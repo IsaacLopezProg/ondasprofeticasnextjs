@@ -1,19 +1,19 @@
 import React,{useState,useEffect} from 'react';
 
 // IMG
-import divider from '../../../public/img/divideriglesia2.png';
-import divider2 from '../../../public/img/divideraccion.png';
+import divider from '/public/img/divideriglesia2.png';
+import divider2 from '/public/img/divideraccion.png';
 
-import accionp from '../../../public/img/accionp.jpg';
-import accionp2 from '../../../public/img/accionp2.jpg';
-import accionp3 from '../../../public/img/accionp3.jpg';
-import accionp4 from '../../../public/img/accionp4.jpg';
+// import accionp from '/public/img/accionp.jpg';
+// import accionp2 from '/public/img/accionp2.jpg';
+// import accionp3 from '/public/img/accionp3.jpg';
+// import accionp4 from '/public/img/accionp4.jpg';
 
 // EXTERNAL
 import Image from 'next/image';
 // import formatDistanceToNow from 'date-fns/formatDistanceToNow';
 import { format } from 'date-fns';
-import { es } from 'date-fns/locale';
+// import { es } from 'date-fns/locale';
 
 
 // import { builder } from '@builder.io/sdk';

@@ -8,7 +8,7 @@ import Horario from './Horario';
 import Ubicacion from './Ubicacion';
 
 // IMG
-import bg from '../../../public/img/bviglesia.jpg'
+import bg from '/public/img/bviglesia.jpg'
 
 export default function Principal(){
 
@@ -16,10 +16,10 @@ export default function Principal(){
     const bv = {
         src:bg,
         // layout:'fill', // fill or fixed
-        texto1:'bienvenidos al',
-        texto2:' ministerio',
-        texto3:'ondas',
-        texto4:'profeticas',
+        texto1:'somos',
+        texto2:' iglesia',
+        texto3:'iglesia',
+        texto4:'more',
         visible:'visible' //visible o invisible
     }
 

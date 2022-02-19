@@ -2,13 +2,13 @@ import React from 'react';
 
 // EXTERNAL
 import Image from 'next/image';
-import styles from '../../../styles/Home.module.css';
-import {ChartPieIcon} from '@heroicons/react/outline';
+import styles from '/styles/Home.module.css';
+// import {ChartPieIcon} from '@heroicons/react/outline';
 
 // IMAGENES
-import bg from '../../../public/img/bgemprende2.jpg'
-import foto from '../../../public/img/bgemprendeforma.jpg';
-import divider from '../../../public/img/divideremprende.png'
+import bg from '/public/img/bgemprende2.jpg'
+import foto from '/public/img/bgemprendeforma.jpg';
+import divider from '/public/img/divideremprende.png'
 
 export default function Forma(){
 

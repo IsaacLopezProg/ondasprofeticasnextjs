@@ -1,7 +1,7 @@
 import React from 'react';
 
 // IMG
-import divider from '../../../public/img/divideriglesia2.png';
+import divider from '/public/img/divideriglesia2.png';
 
 // EXTERNAL
 import Image from 'next/image';

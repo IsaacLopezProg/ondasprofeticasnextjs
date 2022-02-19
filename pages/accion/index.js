@@ -3,6 +3,7 @@ import React from 'react';
 // IMG
 import divider from '../../public/img/divideriglesia2.png';
 import divider2 from '../../public/img/divideraccion.png';
+// import {API_KEY} from '../../.env.local'
 // import divider from '../../public'
 
 // EXTERNAL
@@ -36,7 +37,6 @@ import bg from '../../public/img/bvaccion.jpg'
 
 export default function Conocenos({posts}){
 
-    console.log(posts)
     
 
     const bv = {
@@ -50,7 +50,7 @@ export default function Conocenos({posts}){
     }
 
     function parrafo(p){
-        const cortado = p.slice(0,200);
+        const cortado = p.slice(0,100);
         const agregado = cortado.concat(cortado,'...');
         return agregado;
     }
@@ -92,9 +92,9 @@ export default function Conocenos({posts}){
                                 <iframe width="290" height="150" src={post.data.video} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                             </div>
                             <div className="TEMA ">
-                                <h1 className="uppercase font-light text-4xl text-center md:text-left -mb-2">{post.data.tema}</h1>
+                                <h1 className="uppercase font-light text-3xl  md:text-4xl text-center md:text-left -mb-2">{post.data.tema}</h1>
                                 <Image src={divider2} alt='divider2'/>
-                                <p className="font-light max-w-4xl text-gray-500 mt-4">{parrafo(post.data.descripcion)}</p>
+                                <p className="font-light max-w-4xl text-gray-500 mt-4 text-sm md:text-base">{parrafo(post.data.descripcion)}</p>
                                 <Link href={`/accion/[id]`} as={`/accion/${post.id}`} key={post.id} passHref>
                                     <button className="divide-y-4 uppercase font-medium mt-8 border-2 border-amber-400 py-2 px-4 rounded hover:bg-amber-400">ver mas</button>
                                 </Link>
@@ -117,10 +117,13 @@ export default function Conocenos({posts}){
 
 export async function getServerSideProps(){
 
-    const api = await fetch('https://cdn.builder.io/api/v2/content/post?apiKey=fb0e5cc283ee41ed967bd97a41783fce&limit=10');
+    const apikey = process.env.API_KEY;
+    // const api = await fetch(`https://cdn.builder.io/api/v2/content/post?apiKey=${apikey}&limit=10`);
+    const api = await fetch(`https://cdn.builder.io/api/v2/content/post?apiKey=${apikey}&fields=id,data.tema,data.descripcion,data.video,createdDate&limit=100`);
     const res = await api.json();
     const posts = res.results;
 
+    // console.log(apikey);
     return {
         props: {
             posts

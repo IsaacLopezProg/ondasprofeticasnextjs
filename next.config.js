@@ -14,6 +14,7 @@ module.exports = {
 
 module.exports = {
   images: {
-    domains: ["www.paypal.com","https://www.paypalobjects.com","cdn.builder.io"],
+    domains: ["www.paypal.com","https://www.paypalobjects.com","cdn.builder.io"
+              ,"www.paypalobjects.com"],
   },
 }

@@ -109,11 +109,15 @@ a {
 }
 
 .navlink{
-  @apply pt-2 px-2 ml-2 opacity-60 hover:text-amber-400  md:inline md:float-right;
+  @apply mt-2 md:px-2 mx-1 ml-1 opacity-60 hover:text-amber-400  inline-table md:float-right;
 }
 
 .botonemprende{
   @apply flex justify-between w-full px-4 py-2 font-medium text-left text-gray-400 hover:bg-amber-400 hover:text-black;
+}
+
+.activo{
+  @apply  border-b-2 border-amber-400;
 }
 
 @tailwind utilities;

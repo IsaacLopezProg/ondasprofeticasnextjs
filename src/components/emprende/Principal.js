@@ -6,7 +6,7 @@ import Mision from './Mision';
 import Forma from './Forma';
 
 // IMG
-import bg from '../../../public/img/bvemprende.jpg'
+import bg from '/public/img/bvemprende.jpg'
 
 export default function Principal(){
 

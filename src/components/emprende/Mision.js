@@ -4,13 +4,13 @@ import React from 'react';
 import Image from 'next/image';
 import { Disclosure } from '@headlessui/react';
 import { ChevronUpIcon } from '@heroicons/react/solid';
-// import {altoemprende1, altoemprende2} from '../../../styles/Home.module.css';
-import styles from '../../../styles/Home.module.css';
+// import {altoemprende1, altoemprende2} from '/styles/Home.module.css';
+import styles from '/styles/Home.module.css';
 
 // IMAGENES
-import bg from '../../../public/img/bgemprende1.jpeg'
-import foto from '../../../public/img/bgemprendemision.jpg';
-import divider from '../../../public/img/divideremprende.png'
+import bg from '/public/img/bgemprende1.jpeg'
+import foto from '/public/img/bgemprendemision.jpg';
+import divider from '/public/img/divideremprende.png'
 
 export default function Mision(){
 

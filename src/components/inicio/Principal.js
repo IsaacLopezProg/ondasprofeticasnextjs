@@ -10,7 +10,7 @@ import Equipo from './Equipo';
 import Donacion from './Donacion';
 
 // IMG
-import bg from '../../../public/img/bvinicio.jpg'
+import bg from '/public/img/bvinicio.jpg'
 
 
 

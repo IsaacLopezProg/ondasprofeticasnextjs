@@ -16,7 +16,7 @@ export default function Bienvenida({bv}){
                     priority
                     placeholder="blur"
                 />
-                <div className=" absolute inset-y-20  text-5xl text-center uppercase  w-full mx-auto my-auto ">
+                <div className=" absolute inset-y-20 text-4xl  md:text-5xl text-center uppercase  w-full mx-auto my-auto ">
                     <p className="font-bold mb-4" >
                         <span className="text-amber-400">
                             {bv.texto1}

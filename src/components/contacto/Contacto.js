@@ -10,21 +10,21 @@ import emailjs from '@emailjs/browser';
 export default function Contacto(){
 
     const form = useRef();
+    
+    const user = process.env.NEXT_PUBLIC_MAILJS_USER;
+    const template = process.env.NEXT_PUBLIC_MAILJS_TEMPLATE;
+    const service = process.env.NEXT_PUBLIC_MAILJS_SERVICE;
+
+    function limpiar() { 
+        document.getElementById("FORM").reset();
+      }
 
     const sendEmail = (e) => {
         e.preventDefault();
-
-        // try {
-        //     if(e.target.name === ''){
-
-        //     }
-        // } catch (error) {
-            
-        // }
-    
-        emailjs.sendForm('service_idk3oef', 'template_arkb75q', form.current, 'user_ZD7NZWGeqvxof2nWBvuqm')
+        emailjs.sendForm(service, template, form.current, user)
           .then((result) => {
               console.log(result.text);
+            limpiar();
           }, (error) => {
               console.log(error.text);
           });
@@ -41,8 +41,8 @@ export default function Contacto(){
                     </div>
                     <div className="FORM Y CARD md:flex md:flex-row">
                         <div className="DESCRIPCION md:basis-1/2">
-                            <div className="DESCRIPCION_DETALLE my-8 ml-16 mr-8">
-                                <p className="text-base text-gray-600">
+                            <div className="DESCRIPCION_DETALLE my-4 ml-4 md:my-8 md:ml-16 md:mr-8 mr-4">
+                                <p className="text-sm md:text-base text-gray-600">
                                     Si tiene alguna necesidad por la que desea la oración o contar algun testimonio, por favor siéntase libre de comunicarse con nosotros a través de este portal de comunicación.
                                     <br/>
                                     <br/>
@@ -52,14 +52,14 @@ export default function Contacto(){
                             <br/>
                             <div className="FORM ml-16 mr-8">
                                 <div className="TITULO_DEL_FORM">
-                                    <h1 className="text-3xl font-bold uppercase">
+                                    <h1 className="text-xl md:text-3xl font-bold uppercase">
                                         Envianos un mensaje
                                     </h1>
                                 </div>
                                 <div className="FORMULARIO">
-                                    <form ref={form} onSubmit={sendEmail} className="flex flex-col my-8" >
-                                        <div className="NOMBRE_EMAIL flex flex-row">
-                                            <div className="NOMBRE basis-full md:basis-1/2">
+                                    <form id="FORM" ref={form} onSubmit={sendEmail} className="flex flex-col my-8" >
+                                        <div className="NOMBRE_EMAIL md:flex md:flex-row">
+                                            <div className="NOMBRE md:basis-1/2">
                                                 <label className="font-light mb-2" >Nombre</label>
                                                 <div className="flex mr-4 mt-2">
                                                     <span className="inline-flex items-center px-3 border border-r-0 text-gray-500 bg-gray-50 border-gray-500 ">
@@ -69,21 +69,24 @@ export default function Contacto(){
                                                     type="text"
                                                     name="user_name"
                                                     id="company-website"
+                                                    required
+                                                    minlength="5"
                                                     className="focus:ring-black focus:border-black flex-1 block w-full sm:text-sm border-gray-500"
                                                     // placeholder="www.example.com"
                                                     />
                                                 </div>
                                             </div>
-                                            <div className="EMAIL basis-full md:basis-1/2">
+                                            <div className="EMAIL  md:basis-1/2 mt-8 md:mt-0">
                                                 <label className="font-light mb-2">Email</label>
                                                 <div className="flex mt-2">
                                                     <span className="inline-flex items-center px-3 border border-r-0 text-gray-500 bg-gray-50 border-gray-500 ">
                                                     <AtSymbolIcon className="h-8 w-8"/>
                                                     </span>
                                                     <input
-                                                    type="text"
+                                                    type="email"
                                                     name="user_email"
                                                     id="company-website"
+                                                    required
                                                     className="focus:ring-black focus:border-black flex-1 block w-full sm:text-sm border-gray-500"
                                                     // placeholder="www.example.com"
                                                     />
@@ -93,7 +96,7 @@ export default function Contacto(){
                                         <div className="TEMA mt-8 w-full">
                                             <label className="font-light my-2 ">Tema</label>
                                             <br/>
-                                            <select className="w-full mt-2" name="tipo" defaultValue="">
+                                            <select className="w-full mt-2" name="tipo" defaultValue="" required>
                                                 <option  value="" disabled>Selecciona una opcion</option>
                                                 <option value="Testimonio">Testimonio</option>
                                                 <option value="Peticion de Oracion">Peticion de Oracion</option>
@@ -109,6 +112,7 @@ export default function Contacto(){
                                                 <textarea
                                                     name="message"
                                                     id="company-website"
+                                                    required
                                                     className="focus:ring-black focus:border-black flex-1 block w-full sm:text-sm border-gray-500"
                                                 >
                                                 </textarea>
@@ -124,26 +128,28 @@ export default function Contacto(){
                             </div>
                         </div>
                         <div className="CARD md:baseline-1/2 ">
-                            <div className="sm:m-8 md:ml-16 md:mt-8 border border-slate-300 w-full sm:w-96 ">
+                            <div className="m-8 md:ml-16 md:mt-8 border border-slate-300 sm:w-96 ">
                                 <div className="m-8">
-                                    <h1 className="text-2xl font-normal ">
+                                    <h1 className="text-xl md:text-2xl font-normal ">
                                         Informacion de Ubicacion
                                     </h1>
-                                    <p className="text-lg font-light my-4">
+                                    <p className="text-base md:text-lg font-light my-4">
                                         Ondas Profeticas
                                     </p>
-                                    <p className="text-base text-gray-500 ">
+                                    <p className="text-sm md:text-base text-gray-500 ">
                                         Moca, Espaillat, Republica Dominicana.
                                     </p>
-                                    <p className="text-base text-gray-500 ">
+                                    <p className="text-sm md:text-base  text-gray-500 ">
                                         Telefono: 809-798-1578
                                     </p>
-                                    <p className="text-base text-gray-500 ">
-                                        E-mail: <a className="text-amber-400" href="mailto:email@example.com">ondasprofeticas@gmail.com</a>
+                                    <p className="text-xs md:text-base text-gray-500 ">
+                                        E-mail: <br className="md:hidden "/>
+                                        <a className="text-amber-400 " href="mailto:email@example.com">ondasprofeticas@
+                                        gmail.com</a>
                                     </p>
-                                    <p className="text-base text-gray-500 ">
+                                    <p className="text-xs md:text-base text-gray-500 ">
                                         Website: 
-                                            <Link href="/principal">
+                                            <Link href="/">
                                                 <a className="text-amber-400" > ondasprofeticas.com</a>
                                             </Link>
                                     </p>

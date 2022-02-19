@@ -1,15 +1,15 @@
 import React from 'react';
 
 // IMG
-import bg from '../../../public/img/bginicodonacion.jpg';
-import divider from '../../../public/img/divideremprende.png';
+import bg from '/public/img/bginicodonacion.jpg';
+import divider from '/public/img/divideremprende.png';
 
 // EXTERNAL
 import Image from 'next/image';
-import {BadgeCheckIcon, CheckIcon} from '@heroicons/react/outline';
+import {CheckIcon} from '@heroicons/react/outline';
 
 // CSS
-import styles from '../../../styles/Home.module.css';
+import styles from '/styles/Home.module.css';
 
 export default function Donacion(){
 
@@ -54,7 +54,7 @@ export default function Donacion(){
                                                     <input type="hidden" name="currency_code" value="USD" />
                                                     <h1 className="text-xl my-2">SUSCRIBIRSE</h1>
                                                     <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" />
-                                                    <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1" />
+                                                    <Image alt="foto" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width={1} height={1} />
                                                 </form>
                                             </h2>
                                             <h2 className="text-xl my-2">DONAR</h2>
@@ -63,7 +63,7 @@ export default function Donacion(){
                                                 <input type="hidden" name="cmd" value="_s-xclick" />
                                                 <input type="hidden" name="hosted_button_id" value="TWVKWG48WK26Y" />
                                                 <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-                                                <img alt="" border="0" src="https://www.paypal.com/en_DO/i/scr/pixel.gif" width="1" height="1" />
+                                                <Image alt="foto" src="https://www.paypal.com/en_DO/i/scr/pixel.gif" width={1} height={1}/>
                                             </form>
                                         </div>
                                     </div>
