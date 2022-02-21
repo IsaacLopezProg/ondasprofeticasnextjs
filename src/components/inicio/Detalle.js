@@ -85,7 +85,7 @@ export default function Detalle(){
                 </div>
             </div>
             <div className="basis-full md:basis-1/2">
-                <div className="mx-8 mb-4 -mt-4">
+                <div className="mx-8 mb-4 -mt-4 md:mt-8">
                     <Image 
                         src={foto}
                         objectFit="cover"

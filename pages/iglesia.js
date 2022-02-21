@@ -1,5 +1,8 @@
 import React from 'react';
 
+// INTERNAL
+import Principal from '../src/components/iglesia/Principal';
+
 // HEAD
 import Header from '../src/components/layout/Header';
 import Nav from '../src/components/layout/Nav';
@@ -7,13 +10,10 @@ import Nav from '../src/components/layout/Nav';
 // FOOTER
 import Footer from '../src/components/layout/Footer';
 
-// INTERNAL
-import Principal from '../src/components/iglesia/Principal';
-
 // EXTERNAL
 import Head from 'next/head';
 
-const Contacto = () =>{
+const Iglesia = () =>{
 
     return (
         <>
@@ -24,10 +24,11 @@ const Contacto = () =>{
             <Nav/>
             <Principal/>
             <Footer/>
+            
         </Header>
         </>
     )
 
 }
 
-export default Contacto;
+export default Iglesia;

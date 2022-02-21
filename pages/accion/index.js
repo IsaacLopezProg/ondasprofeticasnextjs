@@ -55,6 +55,12 @@ export default function Conocenos({posts}){
         return agregado;
     }
 
+    function video(v){
+        const entrada = 'https://www.youtube.com/embed/';
+        const video = entrada.concat(v);
+        return video;
+    }
+
     return(
         <>
         <Header>
@@ -86,10 +92,10 @@ export default function Conocenos({posts}){
                                 </p>
                             </div>
                             <div className="VIDEO mb-8 hidden md:flex">
-                                <iframe width="560" height="315" src={post.data.video} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                                <iframe width="560" height="315" src={video(post.data.video)} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                             </div>
                             <div className="VIDEO md:hidden mb-12">
-                                <iframe width="290" height="150" src={post.data.video} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                                <iframe width="290" height="150" src={video(post.data.video)} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                             </div>
                             <div className="TEMA ">
                                 <h1 className="uppercase font-light text-3xl  md:text-4xl text-center md:text-left -mb-2">{post.data.tema}</h1>
@@ -107,7 +113,6 @@ export default function Conocenos({posts}){
                     </div>
                 </div>
             </div>
-            <p>HOLA</p>
             <Footer/>
         </Header>
         </>

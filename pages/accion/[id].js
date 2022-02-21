@@ -47,6 +47,13 @@ export default function Detalle({posts}){
         visible:'visible' //visible o invisible
     }
 
+    function vid(v){
+        const entrada = 'https://www.youtube.com/embed/';
+        const video = entrada.concat(v);
+        return video;
+    }
+
+
     const {descripcion, lugar, tema, fecha,
             } = posts;
 
@@ -69,7 +76,7 @@ export default function Detalle({posts}){
 
         useEffect(() => {
             if(posts.video){
-                editVideo(posts.video);
+                editVideo(vid(posts.video));
             }
         },[posts.video])
 
@@ -128,16 +135,16 @@ export default function Detalle({posts}){
                 </div>
                 <div className="md:flex md:flex-row mt-8">
                     <div className="TITULO basis-full text-center my-8">
-                        <h1 className="text-5xl uppercase font-semibold mt-8">
+                        <h1 className="text-3xl md:text-5xl uppercase font-semibold mt-8">
                             {tema}
                         </h1>
                         <Image src={divider}  alt='divider'/>
-                        <p className="text-gray-500 my-4 font-light">Accion Profetica estuvo en {lugar} el <span className="uppercase">{ format( new Date(fecha), 'dd MMMM', {locale:es})}</span> del { format( new Date(fecha), 'yyyy')}</p>
+                        <p className="text-sm md:text-base text-gray-500 my-4 font-light mx-4 md:mx-0">Accion Profetica estuvo en {lugar} el <span className="uppercase">{ format( new Date(fecha), 'dd MMMM', {locale:es})}</span> del { format( new Date(fecha), 'yyyy')}</p>
                         <div className="ICONOS">
                             {facebook.length > 0 ? 
                             <Link href={facebook}>
                                 <a target="_blank">
-                                    <i className="fa fa-facebook text-black border-2 rounded-full p-4 hover:bg-black hover:text-white "></i>
+                                    <i className="fa fa-facebook text-black border-2 rounded-full py-3 px-6 mx-2  md:p-4 hover:bg-black hover:text-white "></i>
                                 </a>
                             </Link> :
                             null
@@ -145,7 +152,7 @@ export default function Detalle({posts}){
                             {instagram.length > 0 ? 
                             <Link href={instagram}>
                                 <a target="_blank">
-                                    <i className="fa fa-instagram text-black border-2 rounded-full p-4 hover:bg-black hover:text-white mr-2"></i>
+                                    <i className="fa fa-instagram text-black border-2 rounded-full py-3 px-6 mx-2 md:p-4 hover:bg-black hover:text-white mr-2"></i>
                                 </a>
                             </Link> :
                             null
@@ -174,12 +181,12 @@ export default function Detalle({posts}){
                     </div>
                     <div className="md:basis-1/2">
                         <div className="DESCRIPCION ml-8">
-                            <p className="text-sm text-gray-500">{descripcion}</p>
+                            <p className="text-xs md:text-sm text-gray-500">{descripcion}</p>
                         </div>
                     </div>
                 </div>
-                <div className="FOTOS max-w-5xl">
-                    <div className="TEXT ml-4 md:ml-36">
+                <div className="FOTOS max-w-5xl mt-8">
+                    <div className="TEXT ml-4 md:ml-36 mt-8">
                             <h1 className="text-2xl uppercase ">Fotos</h1>
                             <Image src={divider2}  alt='divider2'/>
                     </div>

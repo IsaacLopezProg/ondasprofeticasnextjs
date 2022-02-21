@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 
 // ICONOS
 import {AtSymbolIcon,UserIcon, ChatAltIcon} from '@heroicons/react/outline';
@@ -6,6 +6,7 @@ import {AtSymbolIcon,UserIcon, ChatAltIcon} from '@heroicons/react/outline';
 // EXTERNAL
 import Link from 'next/link';
 import emailjs from '@emailjs/browser';
+import { set } from 'date-fns';
 
 export default function Contacto(){
 
@@ -19,14 +20,26 @@ export default function Contacto(){
         document.getElementById("FORM").reset();
       }
 
+    const [aprobado, setAprobado] = useState(false);
+    const [error, setError] = useState(false);
+
     const sendEmail = (e) => {
         e.preventDefault();
         emailjs.sendForm(service, template, form.current, user)
           .then((result) => {
               console.log(result.text);
-            limpiar();
+              setAprobado(true);
+              limpiar();
+                setTimeout(function() {
+                    setAprobado(false);
+                },5000)
           }, (error) => {
               console.log(error.text);
+              setError(true);
+              limpiar();
+                setTimeout(function() {
+                    setError(false);
+                },5000)
           });
       };
 
@@ -123,6 +136,26 @@ export default function Contacto(){
                                                 Enviar mensaje  
                                             </button>
                                         </div>
+                                        {aprobado ?
+                                            <div id="ALERTA" className="flex p-4 mb-4 text-sm text-green-700 bg-green-100 rounded-lg dark:bg-green-200 dark:text-green-800" role="alert">
+                                                <svg className="inline flex-shrink-0 mr-3 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd"></path></svg>
+                                                <div>
+                                                    <span className="font-medium">Enviado!</span> Mensaje enviado exitosamente.
+                                                </div>
+                                            </div>
+                                    :
+                                        null
+                                    }
+                                    { error ? 
+                                    <div id="ALERTA" className="flex p-4 mb-4 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800" role="alert">
+                                        <svg className="inline flex-shrink-0 mr-3 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd"></path></svg>
+                                        <div>
+                                            <span className="font-medium">No enviado!</span> Confirmar todos los campos esten correctamente llenos sino intentar mas tarde.
+                                        </div>
+                                    </div>
+                                    :
+                                    null
+                                    }
                                     </form>
                                 </div>
                             </div>
