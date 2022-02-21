@@ -22,7 +22,7 @@ const Contacto = () =>{
             <Head>
                 <title>INTERSECION | Ondas Profeticas</title>
             </Head>
-            <Script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp" strategy="afterInteractive"/>
+            <Script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp" strategy="beforeInteractive"/>
             <Nav/>
             <Principal/>
             <Footer/>
