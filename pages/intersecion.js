@@ -12,15 +12,22 @@ import Principal from '../src/components/contacto/Principal';
 
 // EXTERNAL
 import Head from 'next/head';
+import Script from 'next/script';
+import { NextSeo } from 'next-seo';
 
 const Contacto = () =>{
 
     return (
         <>
+        <NextSeo
+            title="Intersecion Profetica"
+            description="El ministerio esta interesado en que si alguna persona necesita la oracion puede contar con nosotros."
+            />
         <Header>
             <Head>
                 <title>INTERSECION | Ondas Profeticas</title>
             </Head>
+            <Script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp" strategy="beforeInteractive" />
             <Nav/>
             <Principal/>
             <Footer/>

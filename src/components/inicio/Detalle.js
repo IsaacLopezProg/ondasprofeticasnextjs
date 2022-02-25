@@ -91,6 +91,8 @@ export default function Detalle(){
                         objectFit="cover"
                         objectPosition="center"
                         quality={100}
+                        height={450}
+                        width={600}
                         alt='foto'
                         placeholder="blur"
                     />

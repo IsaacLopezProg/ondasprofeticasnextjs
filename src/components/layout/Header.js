@@ -1,7 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-import Script from 'next/script';
-import { NextSeo, SocialProfileJsonLd,LogoJsonLd  } from 'next-seo';
+import { SocialProfileJsonLd,LogoJsonLd  } from 'next-seo';
 // import Title from './Title';
 
 const Header = props =>{
@@ -18,18 +17,7 @@ const Header = props =>{
                 {/* EL SEO */}
             </Head>
                 {/* <Script src="https://cdn.tailwindcss.com" strategy="beforeInteractive" /> */}
-                <Script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp" strategy="beforeInteractive" />
-                <NextSeo
-                    robotsProps={{
-                        nosnippet: true,
-                        notranslate: true,
-                        noimageindex: true,
-                        noarchive: true,
-                        maxSnippet: -1,
-                        maxImagePreview: 'none',
-                        maxVideoPreview: -1,
-                    }}
-                    />
+                
                 <SocialProfileJsonLd
                     type="Person"
                     name="Nathanel Veras Grullon"

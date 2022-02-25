@@ -60,8 +60,10 @@ export default function Nav(){
                 <div className="basis-1/3"> 
                     <div className="md:ml-24  sm:ml-3  ml-4 ">
                         <Link href="/" passHref >
-                            <div className="cursor-pointer h-16 w-16 md:h-24 md:w-24">
+                            <div className="cursor-pointer  md:h-24 md:w-24">
                                 <Image
+                                    height={140}
+                                    width={140}
                                     src={logo}
                                     alt="Picture of the author"
                                 />

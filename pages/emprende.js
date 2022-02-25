@@ -12,11 +12,16 @@ import Footer from '../src/components/layout/Footer';
 
 // EXTERNAL
 import Head from 'next/head';
+import { NextSeo } from 'next-seo';
 
 const Emprende = () =>{
 
     return (
         <>
+        <NextSeo
+            title="Emprende"
+            description="Es la parte del ministerio que se encarga de incentivar a los emprendedores"
+            />
         <Header>
             <Head>
                 <title>EMPRENDE | Ondas Profeticas</title>

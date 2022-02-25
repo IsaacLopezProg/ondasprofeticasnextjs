@@ -15,6 +15,8 @@ import Head from 'next/head';
 import { format } from 'date-fns';
 // import { es } from 'date-fns/locale';
 
+import { NextSeo } from 'next-seo';
+
 
 
 // HEAD
@@ -32,6 +34,9 @@ import Ofrendas from '../../src/components/donacion/Ofrendas';
 
 // IMG
 import bg from '../../public/img/bvaccion.jpg'
+
+
+
 
 
 
@@ -63,6 +68,10 @@ export default function Conocenos({posts}){
 
     return(
         <>
+        <NextSeo
+            title="Accion Profetica"
+            description="El ministerio extiende la mano a los mas necesitados atravez de obras sociales."
+            />
         <Header>
             <Head>
                 <title>ACCION | Ondas Profeticas</title>

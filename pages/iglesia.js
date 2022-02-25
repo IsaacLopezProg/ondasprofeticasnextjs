@@ -12,11 +12,16 @@ import Footer from '../src/components/layout/Footer';
 
 // EXTERNAL
 import Head from 'next/head';
+import { NextSeo } from 'next-seo';
 
 const Iglesia = () =>{
 
     return (
         <>
+        <NextSeo
+            title="Iglesia MORE"
+            description="El ministerio tambien cuenta con una iglesia."
+            />
         <Header>
             <Head>
                 <title>IGLESIA | Ondas Profeticas</title>
