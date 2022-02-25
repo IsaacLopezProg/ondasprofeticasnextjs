@@ -71,6 +71,7 @@ export default function Conocenos({posts}){
         <NextSeo
             title="Accion Profetica"
             description="El ministerio extiende la mano a los mas necesitados atravez de obras sociales."
+            canonical="https://www.ondasprofeticas.com/accion"
             />
         <Header>
             <Head>

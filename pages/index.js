@@ -18,6 +18,11 @@ const Principal = () =>{
 
     return (
         <>
+        <NextSeo
+            title="Ondas Profeticas"
+            description="Sitio web cristiano donde se da a conocer el ministerio de ondas profeticas y sus distintas obras y formas de trabajo para difundir el evangelio de Jesucristo"
+            canonical="https://www.ondasprofeticas.com/"
+            />
         <Header>
             <Head>
                 <title>INICIO | Ondas Profeticas</title>

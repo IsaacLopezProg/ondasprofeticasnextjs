@@ -21,6 +21,7 @@ const Iglesia = () =>{
         <NextSeo
             title="Iglesia MORE"
             description="El ministerio tambien cuenta con una iglesia."
+            canonical="https://www.ondasprofeticas.com/iglesia"
             />
         <Header>
             <Head>

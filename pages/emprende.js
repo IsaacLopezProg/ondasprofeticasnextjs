@@ -21,6 +21,7 @@ const Emprende = () =>{
         <NextSeo
             title="Emprende"
             description="Es la parte del ministerio que se encarga de incentivar a los emprendedores"
+            canonical="https://www.ondasprofeticas.com/emprende"
             />
         <Header>
             <Head>

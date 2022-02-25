@@ -22,6 +22,7 @@ const Contacto = () =>{
         <NextSeo
             title="Intersecion Profetica"
             description="El ministerio esta interesado en que si alguna persona necesita la oracion puede contar con nosotros."
+            canonical="https://www.ondasprofeticas.com/intersecion"
             />
         <Header>
             <Head>
