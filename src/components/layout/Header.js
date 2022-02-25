@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Script from 'next/script';
+import { NextSeo, SocialProfileJsonLd,LogoJsonLd  } from 'next-seo';
 // import Title from './Title';
 
 const Header = props =>{
@@ -13,13 +14,36 @@ const Header = props =>{
             <Head>
                 <meta charSet="utf-8" />
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />   
-                {/* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossOrigin="anonymous" referrerPolicy="no-referrer" /> */}
-                <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+                <link rel="icon" href="/favicon.ico" />
                 {/* EL SEO */}
             </Head>
                 {/* <Script src="https://cdn.tailwindcss.com" strategy="beforeInteractive" /> */}
-                {/* <Script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp" strategy="beforeInteractive" /> */}
-
+                <Script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp" strategy="beforeInteractive" />
+                <NextSeo
+                    robotsProps={{
+                        nosnippet: true,
+                        notranslate: true,
+                        noimageindex: true,
+                        noarchive: true,
+                        maxSnippet: -1,
+                        maxImagePreview: 'none',
+                        maxVideoPreview: -1,
+                    }}
+                    />
+                <SocialProfileJsonLd
+                    type="Person"
+                    name="Nathanel Veras Grullon"
+                    url="http://www.ondasprofeticas.com"
+                    sameAs={[
+                        'http://www.facebook.com/Profeta-Nathanael-Veras-G-106847647624852',
+                        'http://instagram.com/profeta_nathanael.v.g',
+                        'https://www.youtube.com/channel/UCTvx29fRpv9vWNUiRlHYjXQ',
+                    ]}
+                    />
+                    <LogoJsonLd
+                        logo="https://www.ondasprofeticas.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.51c16ff7.png&w=384&q=75"
+                        url="http://www.ondasprofeticas.com"
+                        />
 
             
             {/* <Nav/> */}

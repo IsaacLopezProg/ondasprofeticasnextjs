@@ -38,7 +38,7 @@ const Aviso = () =>{
                     </h1>
                 </div>
                 <div className="CONTENIDO">
-                        <article className="mx-16 my-8 text-gray-500 font-light">
+                        <article className="mx-4 md:mx-16 my-8 text-gray-500 font-light md:text-base text-xs">
                                     <div className="">
                                     <div className="">
 

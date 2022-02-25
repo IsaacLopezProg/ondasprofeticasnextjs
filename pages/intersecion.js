@@ -12,7 +12,6 @@ import Principal from '../src/components/contacto/Principal';
 
 // EXTERNAL
 import Head from 'next/head';
-import Script from 'next/script';
 
 const Contacto = () =>{
 
@@ -22,7 +21,6 @@ const Contacto = () =>{
             <Head>
                 <title>INTERSECION | Ondas Profeticas</title>
             </Head>
-            <Script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp" strategy="beforeInteractive"/>
             <Nav/>
             <Principal/>
             <Footer/>

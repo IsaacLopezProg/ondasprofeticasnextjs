@@ -101,7 +101,7 @@ a {
 @tailwind components;
 
 .permisotitulo {
-  @apply my-4 text-3xl text-black font-light;
+  @apply my-4 text-xl md:text-3xl text-black font-light ;
 }
 
 .permisolink {

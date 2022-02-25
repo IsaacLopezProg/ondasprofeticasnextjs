@@ -7,7 +7,8 @@ export default function Footer(){
 
     return (
         <>
-            <div className="flex flex-row justify-center h-12 w-full bg-gray-800 text-xs md:text-base">
+        <div className="flex flex-col  h-24 w-full bg-gray-800">
+            <div className="flex flex-row justify-center text-xs md:text-base">
                 <div className="grid justify-items-center">
                     <Link href="/cookies">
                         <a className="my-4 text-amber-400 mr-4 hover:text-white">
@@ -30,6 +31,12 @@ export default function Footer(){
                     </Link>
                 </div>
             </div>
+            <div className="text-center text-white md:text-base text-xs">
+                Copyright <i className="fa fa-copyright"></i> {'    '} 
+                2022. 
+                Diseñado y Desarrollado por <b> Isaac Lopez</b>
+            </div>
+        </div>
         </>
     )
 }

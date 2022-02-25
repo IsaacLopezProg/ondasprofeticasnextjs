@@ -7,8 +7,9 @@ import { Disclosure } from '@headlessui/react'
 import { MenuIcon } from '@heroicons/react/outline';
 import { useRouter } from 'next/router';
 
+
 // IMG
-import logo from '../../../public/img/aaaa.png';
+import logo from '/public/img/logo.png';
 
 export default function Nav(){
 
@@ -19,17 +20,19 @@ export default function Nav(){
 
     return(
         <>
+        
+        
         <div className="container-auto">
             <div className="flex flex-row border-b">
                     <div className="md:ml-20 basis-2/3 text-center md:text-left"> 
                         <a className="text-xs md:text-base text-slate-400 font-light" href="mailto:ondasprofeticas@gmail.com">
-                            <i className="fa fa-envelope-o text-amber-400 "></i>
+                        <i className="fa fa-envelope-o text-amber-400"></i>
                             &nbsp;ondasprofeticas@gmail.com 
                         </a>
                         <br className="md:hidden"/> 
                         <span className="text-xs md:ml-10 md:text-base text-slate-400 font-light"><i className="fa fa-phone text-amber-400"></i> &nbsp;809-798-1578 </span> 
                     </div>
-                <div className="overflow basis-1/4">
+                    <div className="overflow basis-1/4">
                         <ul className="float-right md:mr-24">
                             <li className=" px-2 border-l hover:opacity-50 inline float-right text-red-600">
                                 <Link href="https://www.youtube.com/channel/UCTvx29fRpv9vWNUiRlHYjXQ">
