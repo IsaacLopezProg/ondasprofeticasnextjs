@@ -13,6 +13,7 @@ import Footer from '../src/components/layout/Footer';
 
 // EXTERNAL
 import Head from 'next/head';
+import { NextSeo } from 'next-seo';
 
 const Principal = () =>{
 
