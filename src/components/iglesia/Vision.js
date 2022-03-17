@@ -3,7 +3,8 @@ import React from 'react';
 // IMG
 import divider from '/public/img/divideriglesia.png'
 import divider2 from '/public/img/dividerdonacion.png';
-import iglesia from '/public/img/iglesia.jpg'; 
+import iglesia from '/public/img/visioniglesia.jpeg'; 
+// import 
 
 // EXTERNAL
 import Image from 'next/image';
@@ -23,16 +24,16 @@ export default function Vision(){
         <div className="CONTENT">
             <div className="flex flex-col bg-black">
                 <div className="TITULO text-center m-8 ">
-                    <h1 className="text-3xl font-bold uppercase text-amber-400">iglesia more casa de adoracion</h1>
+                    <h1 className="text-3xl font-bold uppercase text-amber-400">iglesia sobrenatural more</h1>
                     <Image src={divider} alt='divider'/>
-                    <p className="text-slate-500 font-bold mt-4">Abundante vida para todos</p>
+                    <p className="text-slate-500 font-bold mt-4">Casa De Adoracion</p>
                 </div>
                 <div className="IMAGEN_VISION md:flex md:flex-row bg-amber-400">
                     <div className="IMAGEN basis-full md:basis-1/2">
                         <div  className=" imageniglesia border-8 relative  mx-auto my-8">
                             <Image 
                                 
-                                src={iglesia} 
+                                src={iglesia}
                                 layout="fill"
                                 objectFit="cover"
                                 objectPosition="center"

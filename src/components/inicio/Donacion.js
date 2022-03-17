@@ -27,14 +27,14 @@ export default function Donacion(){
 
             <div className="PADRE absolute inset-y-8  w-full mx-auto my-auto">
                 <div className="TITULO  text-center my-8 grid justify-items-center">
-                    <h1 className="text-5xl font-bold mb-2 uppercase text-amber-400">Ofrendas y Donaciones</h1>
+                    <p className="text-5xl font-bold mb-2 uppercase text-amber-400">Ofrendas y Donaciones</p>
                         <Image src={divider} height={3} alt="divider" />
                     <p className="text-white text-sm font-light max-w-4xl mt-4 mx-8">El ministerio se sustenta a través de patrocinadores comprometidos de manera voluntarias a contribuir Semanal, Quincenal o Mensual con aportes económicos para el sustento de dicho Ministerio y cada una de sus Ramificaciones y ofrendas de personas que Dios mueve a sembrar una semilla de fé en nuestra tierra. </p>
                     </div>
                     <div className="w-full p-2 mx-auto max-w-sm bg-white my-4 hover:bg-amber-400">
                         <div className="p-4 border border-black hover:border-white  grid justify-items-center">
                                     <div className="text-left font-light ml-2">
-                                        <h1 className="text-3xl mb-2 uppercase text-center">suscribirse</h1>
+                                        <p className="text-3xl mb-2 uppercase text-center">suscribirse</p>
                                         <div className="CADR text-center">
                                             <h2 className="">
                                                 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -52,7 +52,7 @@ export default function Donacion(){
                                                     </select> </td></tr>
                                                     </table>
                                                     <input type="hidden" name="currency_code" value="USD" />
-                                                    <h1 className="text-xl my-2">SUSCRIBIRSE</h1>
+                                                    <p className="text-xl my-2">SUSCRIBIRSE</p>
                                                     <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" />
                                                     <Image alt="foto" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width={1} height={1} />
                                                 </form>
@@ -70,7 +70,7 @@ export default function Donacion(){
                             </div>
                     </div>
                     <div className="BTTOM mt-8 text-center grid justify-items-center mx-8">
-                        <h1 className="text-2xl text-white">Nuestros patrocinadores reciben de nosotros:</h1>
+                        <p className="text-2xl text-white">Nuestros patrocinadores reciben de nosotros:</p>
                         <div className="inline-flex my-2 text-white">
                             <CheckIcon className="h-6 w-6 text-amber-400"/>
                             <p className="ml-2 ">Diversas capacitaciones para desarrollo Personal</p>

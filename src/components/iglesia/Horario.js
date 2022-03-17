@@ -23,17 +23,17 @@ export default function Horario() {
             <div className=" md:border-r border-b md:border-b-0  py-4 pr-8 border-black text-center">
                 <h1 className="text-xl font-normal">Martes</h1>
                 <p className="font-light">Servicio de adoracion</p>
-                <p>5:30pm a 7:00pm </p>
+                <p>7:00pm a 9:00pm </p>
             </div>
             <div className=" md:border-r border-b md:border-b-0 py-4 pr-16 border-black text-center">
                 <h1 className="text-xl font-normal">Jueves</h1>
                 <p className="font-light">Estudio de la palabra de Dios</p>
-                <p>6:00pm a 7:15pm </p>
+                <p>7:00pm a 8:30pm </p>
             </div>
             <div className="py-4 pr-8 text-center">
                 <h1 className="text-xl font-normal ">Domingo</h1>
                 <p className="font-light">Culto evangelistico</p>
-                <p>5:00pm a 7:00pm </p>
+                <p>5:30pm a 7:30pm </p>
             </div>
                         
             </div>

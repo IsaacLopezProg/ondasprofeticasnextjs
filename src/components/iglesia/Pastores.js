@@ -5,7 +5,7 @@ import Image from 'next/image';
 import {Tab} from '@headlessui/react';
 
 // IMG
-import foto from '/public/img/pastores.jpg'
+import foto from '/public/img/pastores3.jpeg'
 import divider from '/public/img/divider.png'
 
 // ICONS

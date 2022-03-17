@@ -14,7 +14,7 @@ export default function Mision(){
                         <SearchIcon className="hover:bg-amber-400 hover:text-white h-48 w-48  md:h-72 md:w-72"/>
                     </div>
                     <div className="TITULO my-4">
-                        <h1 className="text-3xl font-medium text-center text-black">Vision</h1>
+                        <p className="text-3xl font-medium text-center text-black">Vision</p>
                     </div>
                     <div className="DESCRIPCION">
                         <p className="mx-8 text-xs md:text-base text-gray-400 text-center">
@@ -28,7 +28,7 @@ export default function Mision(){
                         <GlobeAltIcon className="hover:bg-amber-400 hover:text-white h-48 w-48  md:h-72 md:w-72"/>
                     </div>
                     <div className="TITULO my-4">
-                        <h1 className="text-3xl font-medium text-center text-black">Mision</h1>
+                        <p className="text-3xl font-medium text-center text-black">Mision</p>
                     </div>
                     <div className="DESCRIPCION">
                         <p className="mx-8 text-xs md:text-base text-gray-400 text-center">
@@ -44,7 +44,7 @@ export default function Mision(){
                         <	LightBulbIcon className="hover:bg-amber-400 hover:text-white h-48 w-48  md:h-72 md:w-72"/>
                     </div>
                     <div className="TITULO my-4">
-                        <h1 className="text-3xl font-medium text-center text-black">Objetivo</h1>
+                        <p className="text-3xl font-medium text-center text-black">Objetivo</p>
                     </div>
                     <div className="DESCRIPCION">
                         <p className="mx-8 text-xs md:text-base text-gray-400 text-center">
