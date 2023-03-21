@@ -11,7 +11,7 @@ Website of a Christian ministry.
 
 ## Tech Stack
 
-Design: Tailwindcss.
-Front-end: Next.js/React.js
-Back-end: Builder.io CMS.
-Deploy: Vercel.
+- Design: Tailwindcss.
+- Front-end: Next.js/React.js
+- Back-end: Builder.io CMS.
+- Deploy: Vercel.
